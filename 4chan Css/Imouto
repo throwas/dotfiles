@@ -144,23 +144,23 @@ div.postContainer.opContainer {
 
 /* Post subjects. */
 span.subject {
-    color: #667399 !important;
+    color: #52527a !important;
 }
 
 /* Tripcodes. */
 span.postertrip {
-    color: #667399 !important;
+    color: #666699 !important;
     font-size: 10pt !important;
 }
 
 /* Post numbers. */
 span.postNum a {
-    color: #996673 !important;
+    color: #709dc7 !important;
 }
 
 /* Poster's name. */
 span.name {
-    color: #998B66 !important;
+    color: #52527A  !important;
     font-weight: normal !important;
     font-size: 10pt !important;
 }
@@ -173,8 +173,9 @@ span.dateTime {
 
 /* Quote links. */
 a.quotelink {
-    color: #8C6699!important;
-    font-size: 10pt !important;
+    color: #666699 !important;
+    font-size: 10pt  !important;
+    text-decoration: none !important;
 }
 
 /* Link to posts quoting the current post. */
