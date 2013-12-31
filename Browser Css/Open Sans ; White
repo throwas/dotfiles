@@ -1,0 +1,311 @@
+/*Stole the app menu button from seaweed. You need to download the "moveable firefox button" to drag it into 
+the navi/*Stole the app menu button from seaweed. You need to download the "moveable firefox button" to drag it into 
+the navigation bar in order for it to look right. Favicons only display when tabs are pinned. Tab text and 
+url text is centered. Tabs will clip over the min/max close buttons. Preview: http://i.imgur.com/EgsUU3D.jpg
+Note: Tulip is the name of the visual style used along side this CSS, which makes the rest of the borders
+transparent. You may need to adjust the font sizes since I use themefont and size changer for defaults. 
+Navigate to the customize menu, and show text only on toolbar items for the firefox app button to display the heart properly.*/
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Change icons' opacity so it fits with the rest of the theme */
+#reload-button .toolbarbutton-icon, 
+#downloads-indicator .toolbarbutton-icon, 
+#downloads-button .toolbarbutton-icon, 
+#tabview-button .toolbarbutton-icon,
+#bookmarks-menu-button .toolbarbutton-icon,
+#bookmarks-button .toolbarbutton-icon,
+#home-button .toolbarbutton-icon,
+#stop-button .toolbarbutton-icon,
+#alltabs-button .toolbarbutton-icon {
+    opacity: 0.55 !important;
+}
+
+.tabbrowser-tab{
+padding-left: 3px !Important;
+}
+
+.tab-text.tab-label{
+text-align: center !Important;
+padding-left: 2px !important;
+}
+
+#browser-border-start, #browser-border-end {
+display:none !important;
+ }
+ 
+ #navigator-toolbox::after {
+height: 0px !important;
+}
+
+/*window:not([inFullscreen])[sizemode="normal"] #navigator-toolbox[tabsontop="true"] #TabsToolbar {
+    padding-left: 4px !Important;
+    margin-right: -4px !Important;
+}
+window:not([inFullscreen])[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] #TabsToolbar {
+    padding-left: 3px !Important;
+    margin-top:-3px !important;
+}*/
+
+#tabbrowser-tabs tab[selected]:not([pinned]) {
+min-width: 200px !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+min-width: 200px !Important;
+max-width: 200px !Important;
+}
+
+#tabbrowser-tabs tab .tab-close-button {
+opacity:0!important;
+}
+
+#tabbrowser-tabs tab .tab-close-button:hover {
+opacity:1!important;
+}
+
+#nav-bar{
+margin-top: 2px !important;
+background: #EBEBEB !important;
+height: 26px !important;
+border: 1px solid #ccc !important;
+border-radius: 0px !important;
+}
+
+#main-window #appmenu-button,
+#appmenu-toolbar-button {
+  background: url('http://i.imgur.com/0S0Lr.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 20px !important;
+  margin-bottom: 2px !important;
+  margin-left: 3px !important;
+  margin-right: 2px !important;
+  position: relative !important;
+  -moz-transform: scale(.86) !important;
+  opacity: 0.55 !important;
+  border:none !important;
+  box-shadow: none !important;
+} 
+
+#appmenu-button .button-icon,
+#appmenu-button .button-text{
+display: none !important;
+}
+  
+#main-window:not([chromehidden*="toolbar"])[sizemode="normal"]
+{
+ margin-top:-9px!important;
+ margin-left:0px!important;
+ margin-right:0px!important;
+ margin-bottom:-2px!important;
+}
+
+#identity-box,
+#urlbar-icons > image,
+#urlbar-container dropmarker,
+#appmenu-button .button-text,
+#appmenu-button .button-menu-dropmarker
+{
+display:none!important;
+}
+
+#main-window[tabsintitlebar] #appmenu-button {
+background-position: center center !important;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-button,
+#main-window[tabsintitlebar][privatebrowsingmode=temporary] #appmenu-button,
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button {
+  background: url("chrome://browser/skin/Privacy-48.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+ 
+}
+
+#urlbar {
+    color: #777 !important;
+    border: none !important;
+    border-radius: 1px !important;
+    background: none !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 1px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    height: 26px !important;
+    font-size: 9pt !important; font-family: 'Open Sans'  !important;
+    text-align: center !important;
+    text-shadow:rgba(225,225,225,.8) 0 0 1px!important;
+    -moz-transition:color .2s ease-in-out;
+}
+
+#main-window[sizemode="maximized"] #tabbrowser-tabs tab,
+#main-window[sizemode="fullscreen"] #tabbrowser-tabs tab {
+font-size: 10pt !important; font-family: 'Open Sans Semibold'  !important;
+font-weight: 400 !important;
+color:#999 !important;
+text-align:center !important;
+}
+
+#main-window[sizemode="maximized"] #tabbrowser-tabs tab[selected],
+#main-window[sizemode="fullscreen"] #tabbrowser-tabs tab[selected],
+#main-window[sizemode="maximized"] #tabbrowser-tabs tab:hover,
+#main-window[sizemode="fullscreen"] #tabbrowser-tabs tab:hover{
+font-size: 9pt !important; font-family: 'Open Sans'  !important;
+font-weight: 400 !important;
+color:#666 !important;
+text-align:center !important;
+}
+
+#main-window #tabbrowser-tabs tab {
+font-size: 10pt !important; font-family: 'Open Sans'  !important;
+font-weight: 500 !important;
+background: #EBEBEB !important;
+color:#999 !important;
+text-align:center !important;
+margin-bottom: -2px!important;
+margin-right: -1px!important;
+border: none !important;
+border-top: 1px solid #ccc !important;
+border-left: 1px solid #ccc !important;
+border-right: 1px solid #ccc !important;
+border-radius:0px !important;
+}
+
+#main-window #tabbrowser-tabs tab[selected],
+#main-window #tabbrowser-tabs tab:hover {
+font-size:10pt !important; font-family: 'Open Sans'  !important;
+font-weight: 500 !important;
+background: #E8e8e8 !important;
+text-align: center !important;
+color:#666!important;
+margin-right: -1px!important;
+border: none !important;
+border-top: 1px solid #ccc !important;
+border-left: 1px solid #ccc !important;
+border-right: 1px solid #ccc !important;
+border-radius:0px !important;
+}
+
+#main-window #tabbrowser-tabs tab .tab-throbber,
+#main-window #tabbrowser-tabs tab .tab-icon-image
+{
+max-height:13px!important;
+max-width:13px!important;
+margin-top:1px !important;
+}
+
+.tabbrowser-tab:not([pinned]) .tab-icon-image {
+display:none !important;
+}
+
+#TabsToolbar{
+background: none !important;
+margin-bottom:-2px !important;
+margin-top: -1px !important;
+margin-left:-4px !important;
+margin-right:-4px !important;
+border:none!important;
+}
+
+.tabs-newtab-button {
+  list-style-image: url("data:image/png;base64,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")!important;
+  -moz-image-region: rect(0px, 28px, 18px, 0px)!important;
+  
+}
+
+.tabs-newtab-button:hover {
+  -moz-image-region: rect(0px, 56px, 18px, 28px)!important;
+}
+
+.tabs-newtab-button:hover:active {
+  -moz-image-region: rect(0px, 84px, 18px, 56px)!important;
+}
+
+select > button,
+select > input
+{
+    opacity:0!important;
+}
+
+    /* ADD ON BAR */
+    toolbar#addon-bar
+    {
+        font-size: 12pt !important; font-family: 'MonteCarlo Fixed 12'  !important;
+        text-shadow:rgba(40,40,40,.7) 0 0 1px!important;
+        background:#EBEBEB!important;
+        border: 1px solid #ebebeb !important;
+        margin-bottom: -1px!important;
+        margin-left: -1px!important;
+        margin-right: -1px !important;
+        max-height:20px!important;
+        min-height:20px!important;
+    }
+    
+    toolbar#addon-bar toolbarbutton
+    {
+        border:none!important;
+        max-height:18px!important;
+        min-height:18px!important;
+        margin:0!important;
+        padding:0!important;
+        -moz-appearance:none!important;
+    }
+    scrollbox#PlacesToolbarItems toolbarbutton
+    {
+        border:0!important;
+        border-left:1px solid transparent!important;
+        border-right:1px solid transparent!important;
+        max-height:18px!important;
+        min-height:18px!important;
+        max-width:24px!important;
+        min-width:24px!important;
+        padding:0 0 0 3px!important;
+        -moz-appearance:none!important;
+    }
+    scrollbox#PlacesToolbarItems toolbarbutton .toolbarbutton-icon
+    {
+        height:16px!important;
+        opacity:.5;
+        width:16px!important;
+        -moz-transition:all .1s linear;
+    }
+    scrollbox#PlacesToolbarItems toolbarbutton:hover .toolbarbutton-icon
+    {
+        opacity:1;
+    }
+    scrollbox#PlacesToolbarItems toolbarbutton:hover
+    {
+        background:#EBEBEB!important;
+        border-left:1px solid #EBEBEB!important;
+        border-right:1px solid #EBEBEB!important;
+        box-shadow:#EBEBEB 0 -1px 3px;
+    }
+    scrollbox#PlacesToolbarItems toolbarbutton:active
+    {
+        background:#EBEBEB!important;
+        border-left:1px solid #EBEBEB!important;
+        border-right:1px solid #EBEBEB!important;
+    }
+    scrollbox#PlacesToolbarItems toolbarbutton:first-child,
+    scrollbox#PlacesToolbarItems toolbarbutton:first-child:hover,
+    scrollbox#PlacesToolbarItems toolbarbutton:first-child:active
+    {
+        border-left:0!important;
+    }
+
+
+    /* HIDDEN ELEMENTS */
+    #identity-box,
+    #urlbar-icons > image,
+    #urlbar-container dropmarker,
+    #tabbrowser-tabs .scrollbutton-up,
+    #tabbrowser-tabs .scrollbutton-down,
+    #appmenu-toolbar-button .toolbarbutton-text,
+    #appmenu-toolbar-button .toolbarbutton-menu-dropmarker,
+    toolbar#addon-bar toolbarbutton .toolbarbutton-menubutton-dropmarker,
+    toolbar#addon-bar #addonbar-closebutton,
+    #searchbar-container dropmarker
+    {
+        display:none!important;
+    }
