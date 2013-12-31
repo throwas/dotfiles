@@ -309,3 +309,12 @@ select > input
     {
         display:none!important;
     }
+    
+/* Gray icon saying plugin is active and providing option to block */
+#plugins-notification-icon{
+  width: 0px !important;
+  margin-left: -7px !important;
+  margin-right: -5px !important;
+}
+
+}
