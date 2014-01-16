@@ -1,9 +1,7 @@
 /*Stole the app menu button from seaweed. You need to download the "moveable firefox button" to drag it into 
 the navigation bar in order for it to look right. Favicons only display when tabs are pinned. Tab text and 
-url text is centered. Tabs will clip over the min/max close buttons. Preview: http://i.imgur.com/EgsUU3D.jpg
-Note: Tulip is the name of the visual style used along side this CSS, which makes the rest of the borders
-transparent. You may need to adjust the font sizes since I use themefont and size changer for defaults. 
-Navigate to the customize menu, and show text only on toolbar items for the firefox app button to display the heart properly.*/
+url text is centered. Tabs will clip over the min/max close buttons. Navigate to the customize menu, 
+and show text only on toolbar items for the firefox app button to display the heart properly.*/
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
