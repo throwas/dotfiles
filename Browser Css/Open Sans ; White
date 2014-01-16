@@ -1,5 +1,4 @@
 /*Stole the app menu button from seaweed. You need to download the "moveable firefox button" to drag it into 
-the navi/*Stole the app menu button from seaweed. You need to download the "moveable firefox button" to drag it into 
 the navigation bar in order for it to look right. Favicons only display when tabs are pinned. Tab text and 
 url text is centered. Tabs will clip over the min/max close buttons. Preview: http://i.imgur.com/EgsUU3D.jpg
 Note: Tulip is the name of the visual style used along side this CSS, which makes the rest of the borders
