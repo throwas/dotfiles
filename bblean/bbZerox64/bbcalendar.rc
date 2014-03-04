@@ -1,0 +1,36 @@
+!============================
+! BBCalendar 1.1.1 config file.
+!============================
+
+bbcalendar.x: 7
+bbcalendar.y: 97
+bbcalendar.width: 150
+bbcalendar.height: 150
+bbcalendar.placement: 1
+bbcalendar.alpha: 160
+bbcalendar.fontSize.text: 16
+bbcalendar.fontSize.date: 16
+bbcalendar.inSlit: true
+bbcalendar.alwaysOnTop: false
+bbcalendar.snapWindow: true
+bbcalendar.transparency: false
+bbcalendar.pluginToggle: false
+bbcalendar.showNameDay: false
+bbcalendar.showGrid: false
+bbcalendar.drawBorder: true
+bbcalendar.sundayFirst: false
+bbcalendar.styles: 272722
+bbcalendar.mode: 1100
+bbcalendar.weekDayNames: MTWTFS
+bbcalendar.clockformat: %A, %B %d
+bbcalendar.font.default: false
+bbcalendar.font.date: Open Sans
+bbcalendar.font.week: Open Sans
+bbcalendar.font.days: Open Sans
+bbcalendar.bitmap.calendar: .none
+bbcalendar.bitmap.date: .none
+bbcalendar.bitmap.week: .none
+bbcalendar.bitmap.days: .none
+bbcalendar.bitmap.currentd: .none
+bbcalendar.bitmap.alarm: .none
+bbcalendar.bitmap.overlay: 

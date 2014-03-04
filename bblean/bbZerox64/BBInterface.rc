@@ -1,0 +1,323 @@
+!---- BBInterface 0.9.9_k10b ----
+@BBInterface Plugin SetPluginProperty SnapWindows true
+@BBInterface Plugin SetPluginProperty SnapDistance 7
+@BBInterface Plugin SetPluginProperty SnapPadding 2
+@BBInterface Plugin SetPluginProperty IconSaturation 255
+@BBInterface Plugin SetPluginProperty IconHue 0
+@BBInterface Plugin SetPluginProperty DeskDropCommand ""
+@BBInterface Plugin SetPluginProperty GlobalOnload ""
+@BBInterface Plugin SetPluginProperty GlobalOnunload ""
+@BBInterface Plugin SetPluginProperty ClickRaise false
+@BBInterface Plugin SetPluginProperty SuppressErrors true
+@BBInterface Plugin SetPluginProperty ZeroControlsAllowed false
+@BBInterface Plugin SetPluginProperty UseTooltip false
+@BBInterface Plugin SetPluginProperty ClearConfigurationOnLoad false
+@BBInterface Plugin SetPluginProperty ModuleAutoSave true
+@BBInterface Plugin OnLoad ""
+@BBInterface Plugin OnUnload ""
+
+!---- Loaded modules ----
+@BBInterface Module Load "C:\bbZero.vs64\plugins\bbInterface_iTunes\scripts\sysmeterModule.rc"
+@BBInterface Module Load "C:\bbZero.vs64\plugins\bbInterface_iTunes\scripts\messagebox.rc"
+
+!---- Active modules ----
+@BBInterface Module Toggle Module1
+@BBInterface Module Toggle Module2
+
+!---- SysmeterFrame ----
+@BBInterface Control Create Frame SysmeterFrame
+@BBInterface Control SetWindowProperty SysmeterFrame X 0
+@BBInterface Control SetWindowProperty SysmeterFrame Y 0
+@BBInterface Control SetWindowProperty SysmeterFrame Width 268
+@BBInterface Control SetWindowProperty SysmeterFrame Height 58
+@BBInterface Control SetWindowProperty SysmeterFrame Border true
+@BBInterface Control SetWindowProperty SysmeterFrame IsVisible false
+@BBInterface Control SetWindowProperty SysmeterFrame Style "Toolbar"
+@BBInterface Control SetWindowProperty SysmeterFrame IsToggledWithPlugins true
+@BBInterface Control SetWindowProperty SysmeterFrame IsOnAllWorkspaces true
+@BBInterface Control SetWindowProperty SysmeterFrame DetectFullScreen false
+@BBInterface Control SetWindowProperty SysmeterFrame IsOnTop false
+@BBInterface Control SetWindowProperty SysmeterFrame AutoHide true
+@BBInterface Control SetWindowProperty SysmeterFrame IsSlitted false
+@BBInterface Control SetWindowProperty SysmeterFrame IsTransparent false
+@BBInterface Control SetWindowProperty SysmeterFrame Transparency 90
+@BBInterface Control SetWindowProperty SysmeterFrame MakeInvisible "BBLoseFocus"
+@BBInterface Control SetControlProperty SysmeterFrame HAlign "Center"
+@BBInterface Control SetControlProperty SysmeterFrame VAlign "Top"
+@BBInterface Control SetControlProperty SysmeterFrame HasTitleBar false
+@BBInterface Control SetControlProperty SysmeterFrame IsLocked true
+
+!---- SysmeterFrame::CPULabel ----
+@BBInterface Control CreateChild SysmeterFrame Label CPULabel
+@BBInterface Control SetWindowProperty CPULabel X 2
+@BBInterface Control SetWindowProperty CPULabel Y 2
+@BBInterface Control SetWindowProperty CPULabel Width 64
+@BBInterface Control SetWindowProperty CPULabel Height 17
+@BBInterface Control SetWindowProperty CPULabel Border true
+@BBInterface Control SetWindowProperty CPULabel IsVisible true
+@BBInterface Control SetWindowProperty CPULabel Style "Clock"
+@BBInterface Control SetControlProperty CPULabel HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel VAlign "Center"
+@BBInterface Control SetAgent CPULabel Caption StaticText "CPU"
+
+!---- SysmeterFrame::NetIF1Meter ----
+@BBInterface Control CreateChild SysmeterFrame Label NetIF1Meter
+@BBInterface Control SetWindowProperty NetIF1Meter X 134
+@BBInterface Control SetWindowProperty NetIF1Meter Y 21
+@BBInterface Control SetWindowProperty NetIF1Meter Width 64
+@BBInterface Control SetWindowProperty NetIF1Meter Height 35
+@BBInterface Control SetWindowProperty NetIF1Meter Border true
+@BBInterface Control SetWindowProperty NetIF1Meter IsVisible true
+@BBInterface Control SetWindowProperty NetIF1Meter Style "Toolbar"
+@BBInterface Control SetControlProperty NetIF1Meter HAlign "Center"
+@BBInterface Control SetControlProperty NetIF1Meter VAlign "Top"
+@BBInterface Control SetAgent NetIF1Meter Caption NetworkMonitor "ALLInterfaces"
+@BBInterface Control SetAgentProperty NetIF1Meter Caption MonitorType 1
+@BBInterface Control SetAgent NetIF1Meter Image AutoScaleGraph "LINECHART"
+@BBInterface Control SetAgent NetIF1Meter Image.Value NetworkMonitor "ALLInterfaces"
+@BBInterface Control SetAgentProperty NetIF1Meter Image.Value MonitorType 1
+
+!---- SysmeterFrame::NetIF2Meter ----
+@BBInterface Control CreateChild SysmeterFrame Label NetIF2Meter
+@BBInterface Control SetWindowProperty NetIF2Meter X 200
+@BBInterface Control SetWindowProperty NetIF2Meter Y 21
+@BBInterface Control SetWindowProperty NetIF2Meter Width 66
+@BBInterface Control SetWindowProperty NetIF2Meter Height 35
+@BBInterface Control SetWindowProperty NetIF2Meter Border true
+@BBInterface Control SetWindowProperty NetIF2Meter IsVisible true
+@BBInterface Control SetWindowProperty NetIF2Meter Style "Toolbar"
+@BBInterface Control SetControlProperty NetIF2Meter HAlign "Center"
+@BBInterface Control SetControlProperty NetIF2Meter VAlign "Top"
+@BBInterface Control SetAgent NetIF2Meter Caption NetworkMonitor "ALLInterfaces"
+@BBInterface Control SetAgentProperty NetIF2Meter Caption MonitorType 2
+@BBInterface Control SetAgent NetIF2Meter Image AutoScaleGraph "LINECHART"
+@BBInterface Control SetAgent NetIF2Meter Image.Value NetworkMonitor "ALLInterfaces"
+@BBInterface Control SetAgentProperty NetIF2Meter Image.Value MonitorType 2
+
+!---- SysmeterFrame::RAMMeter ----
+@BBInterface Control CreateChild SysmeterFrame Label RAMMeter
+@BBInterface Control SetWindowProperty RAMMeter X 68
+@BBInterface Control SetWindowProperty RAMMeter Y 21
+@BBInterface Control SetWindowProperty RAMMeter Width 64
+@BBInterface Control SetWindowProperty RAMMeter Height 35
+@BBInterface Control SetWindowProperty RAMMeter Border true
+@BBInterface Control SetWindowProperty RAMMeter IsVisible true
+@BBInterface Control SetWindowProperty RAMMeter Style "Toolbar"
+@BBInterface Control SetControlProperty RAMMeter HAlign "Center"
+@BBInterface Control SetControlProperty RAMMeter VAlign "Top"
+@BBInterface Control SetAgent RAMMeter Caption SystemMonitor "PhysicalMemoryUsed"
+@BBInterface Control SetAgent RAMMeter Image Graph "LINECHART"
+@BBInterface Control SetAgent RAMMeter Image.Value SystemMonitor "PhysicalMemoryUsed"
+
+!---- SysmeterFrame::RamLabel ----
+@BBInterface Control CreateChild SysmeterFrame Label RamLabel
+@BBInterface Control SetWindowProperty RamLabel X 68
+@BBInterface Control SetWindowProperty RamLabel Y 2
+@BBInterface Control SetWindowProperty RamLabel Width 64
+@BBInterface Control SetWindowProperty RamLabel Height 17
+@BBInterface Control SetWindowProperty RamLabel Border true
+@BBInterface Control SetWindowProperty RamLabel IsVisible true
+@BBInterface Control SetWindowProperty RamLabel Style "Clock"
+@BBInterface Control SetControlProperty RamLabel HAlign "Center"
+@BBInterface Control SetControlProperty RamLabel VAlign "Center"
+@BBInterface Control SetAgent RamLabel Caption StaticText "RAM"
+
+!---- SysmeterFrame::DownLabel ----
+@BBInterface Control CreateChild SysmeterFrame Label DownLabel
+@BBInterface Control SetWindowProperty DownLabel X 134
+@BBInterface Control SetWindowProperty DownLabel Y 2
+@BBInterface Control SetWindowProperty DownLabel Width 64
+@BBInterface Control SetWindowProperty DownLabel Height 17
+@BBInterface Control SetWindowProperty DownLabel Border true
+@BBInterface Control SetWindowProperty DownLabel IsVisible true
+@BBInterface Control SetWindowProperty DownLabel Style "Clock"
+@BBInterface Control SetControlProperty DownLabel HAlign "Center"
+@BBInterface Control SetControlProperty DownLabel VAlign "Center"
+@BBInterface Control SetAgent DownLabel Caption StaticText "Download"
+
+!---- SysmeterFrame::UploadLabel1 ----
+@BBInterface Control CreateChild SysmeterFrame Label UploadLabel1
+@BBInterface Control SetWindowProperty UploadLabel1 X 200
+@BBInterface Control SetWindowProperty UploadLabel1 Y 2
+@BBInterface Control SetWindowProperty UploadLabel1 Width 66
+@BBInterface Control SetWindowProperty UploadLabel1 Height 17
+@BBInterface Control SetWindowProperty UploadLabel1 Border true
+@BBInterface Control SetWindowProperty UploadLabel1 IsVisible true
+@BBInterface Control SetWindowProperty UploadLabel1 Style "Clock"
+@BBInterface Control SetControlProperty UploadLabel1 HAlign "Center"
+@BBInterface Control SetControlProperty UploadLabel1 VAlign "Center"
+@BBInterface Control SetAgent UploadLabel1 Caption StaticText "Upload"
+
+!---- SysmeterFrame::CPUMeter ----
+@BBInterface Control CreateChild SysmeterFrame Label CPUMeter
+@BBInterface Control SetWindowProperty CPUMeter X 2
+@BBInterface Control SetWindowProperty CPUMeter Y 21
+@BBInterface Control SetWindowProperty CPUMeter Width 64
+@BBInterface Control SetWindowProperty CPUMeter Height 35
+@BBInterface Control SetWindowProperty CPUMeter Border true
+@BBInterface Control SetWindowProperty CPUMeter IsVisible true
+@BBInterface Control SetWindowProperty CPUMeter Style "Toolbar"
+@BBInterface Control SetControlProperty CPUMeter HAlign "Center"
+@BBInterface Control SetControlProperty CPUMeter VAlign "Top"
+@BBInterface Control SetAgent CPUMeter Caption SystemMonitor "CPUUsage"
+@BBInterface Control SetAgent CPUMeter Image Graph "LINECHART"
+@BBInterface Control SetAgent CPUMeter Image.Value SystemMonitor "CPUUsage"
+
+!---- Frame1 ----
+@BBInterface Control Create Frame Frame1
+@BBInterface Control SetWindowProperty Frame1 X 1310
+@BBInterface Control SetWindowProperty Frame1 Y 54
+@BBInterface Control SetWindowProperty Frame1 Width 586
+@BBInterface Control SetWindowProperty Frame1 Height 25
+@BBInterface Control SetWindowProperty Frame1 Border true
+@BBInterface Control SetWindowProperty Frame1 IsVisible true
+@BBInterface Control SetWindowProperty Frame1 Style "Toolbar"
+@BBInterface Control SetWindowProperty Frame1 IsToggledWithPlugins true
+@BBInterface Control SetWindowProperty Frame1 IsOnAllWorkspaces true
+@BBInterface Control SetWindowProperty Frame1 DetectFullScreen false
+@BBInterface Control SetWindowProperty Frame1 IsOnTop false
+@BBInterface Control SetWindowProperty Frame1 AutoHide false
+@BBInterface Control SetWindowProperty Frame1 IsSlitted false
+@BBInterface Control SetWindowProperty Frame1 IsTransparent false
+@BBInterface Control SetWindowProperty Frame1 Transparency 100
+@BBInterface Control SetWindowProperty Frame1 MakeInvisible "Never"
+@BBInterface Control SetControlProperty Frame1 HAlign "Center"
+@BBInterface Control SetControlProperty Frame1 VAlign "Top"
+@BBInterface Control SetControlProperty Frame1 HasTitleBar false
+@BBInterface Control SetControlProperty Frame1 IsLocked false
+
+!---- Frame1::CPULabel7 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel7
+@BBInterface Control SetWindowProperty CPULabel7 X 2
+@BBInterface Control SetWindowProperty CPULabel7 Y 2
+@BBInterface Control SetWindowProperty CPULabel7 Width 55
+@BBInterface Control SetWindowProperty CPULabel7 Height 21
+@BBInterface Control SetWindowProperty CPULabel7 Border true
+@BBInterface Control SetWindowProperty CPULabel7 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel7 Style "Clock"
+@BBInterface Control SetControlProperty CPULabel7 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel7 VAlign "Center"
+@BBInterface Control SetAgent CPULabel7 Caption StaticText "Upload:"
+
+!---- Frame1::CPULabel8 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel8
+@BBInterface Control SetWindowProperty CPULabel8 X 59
+@BBInterface Control SetWindowProperty CPULabel8 Y 2
+@BBInterface Control SetWindowProperty CPULabel8 Width 64
+@BBInterface Control SetWindowProperty CPULabel8 Height 21
+@BBInterface Control SetWindowProperty CPULabel8 Border false
+@BBInterface Control SetWindowProperty CPULabel8 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel8 Style "Toolbar"
+@BBInterface Control SetControlProperty CPULabel8 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel8 VAlign "Center"
+@BBInterface Control SetAgent CPULabel8 Caption NetworkMonitor "ALLInterfaces"
+@BBInterface Control SetAgentProperty CPULabel8 Caption MonitorType 2
+
+!---- Frame1::CPULabel5 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel5
+@BBInterface Control SetWindowProperty CPULabel5 X 125
+@BBInterface Control SetWindowProperty CPULabel5 Y 2
+@BBInterface Control SetWindowProperty CPULabel5 Width 70
+@BBInterface Control SetWindowProperty CPULabel5 Height 21
+@BBInterface Control SetWindowProperty CPULabel5 Border true
+@BBInterface Control SetWindowProperty CPULabel5 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel5 Style "Clock"
+@BBInterface Control SetControlProperty CPULabel5 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel5 VAlign "Center"
+@BBInterface Control SetAgent CPULabel5 Caption StaticText "Download:"
+
+!---- Frame1::CPULabel6 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel6
+@BBInterface Control SetWindowProperty CPULabel6 X 197
+@BBInterface Control SetWindowProperty CPULabel6 Y 2
+@BBInterface Control SetWindowProperty CPULabel6 Width 63
+@BBInterface Control SetWindowProperty CPULabel6 Height 21
+@BBInterface Control SetWindowProperty CPULabel6 Border false
+@BBInterface Control SetWindowProperty CPULabel6 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel6 Style "Toolbar"
+@BBInterface Control SetControlProperty CPULabel6 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel6 VAlign "Center"
+@BBInterface Control SetAgent CPULabel6 Caption NetworkMonitor "ALLInterfaces"
+@BBInterface Control SetAgentProperty CPULabel6 Caption MonitorType 1
+
+!---- Frame1::CPULabel1 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel1
+@BBInterface Control SetWindowProperty CPULabel1 X 262
+@BBInterface Control SetWindowProperty CPULabel1 Y 2
+@BBInterface Control SetWindowProperty CPULabel1 Width 39
+@BBInterface Control SetWindowProperty CPULabel1 Height 21
+@BBInterface Control SetWindowProperty CPULabel1 Border true
+@BBInterface Control SetWindowProperty CPULabel1 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel1 Style "Clock"
+@BBInterface Control SetControlProperty CPULabel1 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel1 VAlign "Center"
+@BBInterface Control SetAgent CPULabel1 Caption StaticText "CPU:"
+@BBInterface Control SetAgent CPULabel1 RightMouseUp Run "C:\Windows\System32\perfmon.exe"
+
+!---- Frame1::CPULabel2 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel2
+@BBInterface Control SetWindowProperty CPULabel2 X 303
+@BBInterface Control SetWindowProperty CPULabel2 Y 2
+@BBInterface Control SetWindowProperty CPULabel2 Width 32
+@BBInterface Control SetWindowProperty CPULabel2 Height 21
+@BBInterface Control SetWindowProperty CPULabel2 Border false
+@BBInterface Control SetWindowProperty CPULabel2 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel2 Style "Toolbar"
+@BBInterface Control SetControlProperty CPULabel2 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel2 VAlign "Center"
+@BBInterface Control SetAgent CPULabel2 Caption SystemMonitor "CPUUsage"
+
+!---- Frame1::CPULabel10 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel10
+@BBInterface Control SetWindowProperty CPULabel10 X 337
+@BBInterface Control SetWindowProperty CPULabel10 Y 2
+@BBInterface Control SetWindowProperty CPULabel10 Width 70
+@BBInterface Control SetWindowProperty CPULabel10 Height 21
+@BBInterface Control SetWindowProperty CPULabel10 Border false
+@BBInterface Control SetWindowProperty CPULabel10 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel10 Style "Toolbar"
+@BBInterface Control SetControlProperty CPULabel10 HAlign "Left"
+@BBInterface Control SetControlProperty CPULabel10 VAlign "Center"
+@BBInterface Control SetAgent CPULabel10 Image Graph "LINECHART"
+@BBInterface Control SetAgent CPULabel10 Image.Value SystemMonitor "CPUUsage"
+
+!---- Frame1::CPULabel3 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel3
+@BBInterface Control SetWindowProperty CPULabel3 X 409
+@BBInterface Control SetWindowProperty CPULabel3 Y 2
+@BBInterface Control SetWindowProperty CPULabel3 Width 39
+@BBInterface Control SetWindowProperty CPULabel3 Height 21
+@BBInterface Control SetWindowProperty CPULabel3 Border true
+@BBInterface Control SetWindowProperty CPULabel3 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel3 Style "Clock"
+@BBInterface Control SetControlProperty CPULabel3 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel3 VAlign "Center"
+@BBInterface Control SetAgent CPULabel3 Caption StaticText "RAM:"
+@BBInterface Control SetAgent CPULabel3 RightMouseUp Run "C:\Windows\System32\taskmgr.exe"
+
+!---- Frame1::CPULabel9 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel9
+@BBInterface Control SetWindowProperty CPULabel9 X 450
+@BBInterface Control SetWindowProperty CPULabel9 Y 2
+@BBInterface Control SetWindowProperty CPULabel9 Width 35
+@BBInterface Control SetWindowProperty CPULabel9 Height 21
+@BBInterface Control SetWindowProperty CPULabel9 Border false
+@BBInterface Control SetWindowProperty CPULabel9 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel9 Style "Toolbar"
+@BBInterface Control SetControlProperty CPULabel9 HAlign "Center"
+@BBInterface Control SetControlProperty CPULabel9 VAlign "Center"
+@BBInterface Control SetAgent CPULabel9 Caption SystemMonitor "PhysicalMemoryUsed"
+
+!---- Frame1::CPULabel4 ----
+@BBInterface Control CreateChild Frame1 Label CPULabel4
+@BBInterface Control SetWindowProperty CPULabel4 X 487
+@BBInterface Control SetWindowProperty CPULabel4 Y 2
+@BBInterface Control SetWindowProperty CPULabel4 Width 97
+@BBInterface Control SetWindowProperty CPULabel4 Height 21
+@BBInterface Control SetWindowProperty CPULabel4 Border false
+@BBInterface Control SetWindowProperty CPULabel4 IsVisible true
+@BBInterface Control SetWindowProperty CPULabel4 Style "Toolbar"
+@BBInterface Control SetControlProperty CPULabel4 HAlign "Left"
+@BBInterface Control SetControlProperty CPULabel4 VAlign "Center"
+@BBInterface Control SetAgent CPULabel4 Image Graph "LINECHART"
+@BBInterface Control SetAgent CPULabel4 Image.Value SystemMonitor "PhysicalMemoryUsed"
