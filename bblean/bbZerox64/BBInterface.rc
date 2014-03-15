@@ -17,8 +17,6 @@
 @BBInterface Plugin OnUnload ""
 
 !---- Loaded modules ----
-@BBInterface Module Load "C:\bbZero.vs64\plugins\bbInterface_iTunes\scripts\sysmeterModule.rc"
-@BBInterface Module Load "C:\bbZero.vs64\plugins\bbInterface_iTunes\scripts\messagebox.rc"
 
 !---- Active modules ----
 @BBInterface Module Toggle Module1
