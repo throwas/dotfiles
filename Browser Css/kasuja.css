@@ -2,15 +2,15 @@
 
 
 #main-window {
-  -moz-appearance: -moz-win-glass !important;
+margin-top: -13px !important;
 }
 
 #browser-border-start, #browser-border-end {
- display: none!important;
+display: none!important;
  }
 
 #main-window{
-margin-top: -13px !important;
+
 }
 
 #main-window #appmenu-button,
@@ -263,7 +263,7 @@ toolbarbutton {
 /* actual url bar */
 
 #urlbar {
-  background: #fefefe !important;
+  background: #fcfcfc !important;
   height: 26px !important;
   font-family:"Open Sans", sans-serif !important;
   font-size: 10pt !important;
