@@ -36,8 +36,8 @@ KeyToGrab(Right),       WithModifier(Alt),      WithAction(NextWorkspace)
 KeyToGrab(D),           WithModifier(Win),      WithAction(MinimizeAll)
 !KeyToGrab(PageUp),      WithModifier(Win),      WithAction(RaiseWindow)
 !KeyToGrab(PageDown),    WithModifier(Win),      WithAction(LowerWindow)
-KeyToGrab(End),         WithModifier(Win),      WithAction(ShadeWindow)
-KeyToGrab(Insert),      WithModifier(Win),      WithAction(StickWindow)
+!KeyToGrab(End),         WithModifier(Win),      WithAction(ShadeWindow)
+!KeyToGrab(Insert),      WithModifier(Win),      WithAction(StickWindow)
 KeyToGrab(X),      WithModifier(Win),      WithAction(CloseWindow)
 
 # Blackbox

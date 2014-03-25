@@ -9,87 +9,63 @@
 # change the order of items or uncomment some of the
 # currently disabled (!) items)
 
+bbleanbar.item: WorkspaceLabel
 bbleanbar.item: WorkspaceButtonL
-!bbleanbar.item: WorkspaceLabel
 bbleanbar.item: WorkspaceButtonR
-!bbleanbar.item: Tray
-!bbleanbar.item: WindowButtonL
-!bbleanbar.item: WindowButtonR
-bbleanbar.item: WindowLabel
-!bbleanbar.item: CurrentOnlyButton
-!bbleanbar.item: Tasks
-!bbleanbar.item: TaskStyleButton
+bbleanbar.item: Tasks
+bbleanbar.item: CurrentOnlyButton
+bbleanbar.item: Tray
+bbleanbar.item: WindowButtonL
+bbleanbar.item: WindowButtonR
 bbleanbar.item: Clock
 
+!bbleanbar.item: TaskStyleButton
+!bbleanbar.item: WindowLabel
+!bbleanbar.item: NewLine
+!bbleanbar.item: Space
 
 # ----------------
-# General Settings
+# General Settings (ctrl-right-click menu)
 bbLeanBar.placement: User
-bbLeanBar.position.x: 1310
-bbLeanBar.position.y: 25
-bbLeanBar.widthPercent: 18
+bbLeanBar.position.x: 118
+bbLeanBar.position.y: 323
+bbLeanBar.widthPercent: 80
 bbLeanBar.useSlit: false
-bbLeanBar.pluginToggle: true
-bbleanbar.OnTop: true
 bbLeanBar.AutoHide: false
+bbleanbar.OnTop: true
 bbleanbar.autoRaise: true
 bbleanbar.snapToEdge: true
-bbLeanBar.snapWindow: 5
-bbLeanBar.alpha.enabled: false
-bbLeanBar.alpha.value: 255
+bbLeanBar.pluginToggle: true
 
-------------
-# Icon Color
-bbLeanBar.icon.saturation: 100
-bbLeanBar.icon.hue: 1
-bbLeanBar.icon.size: 16
+bbleanbar.alpha.enabled: false
+bbleanbar.alpha.value: 200
 
-# ------------
-# Clock-Format
-bbLeanBar.strftimeFormat: %H:%M
-bbLeanBar.strftimeTipsFormat: %A, %B %d
-
-# ---------------
-# Special Options
-bbLeanBar.smallIcons: true
-bbLeanBar.balloonTips: true
-bbLeanBar.autoFullscreenHide: true
-bbLeanBar.setDesktopMargin: true
-bbLeanBar.sendToSwitchTo: true
-
-# -------------------------
+# ---------
 # Task Tabs
-bbLeanBar.tray.hidden.count: 0
-bbLeanBar.tasks.style: 0
+bbLeanBar.tasks.style: 2
+bbLeanBar.tasks.maxWidth: 100
 bbLeanBar.tasks.reverse: false
 bbLeanBar.tasks.current: true
 bbLeanBar.tasks.sysmenu: false
 bbLeanBar.tasks.drawBorder: false
-bbLeanBar.tasks.maxWidth: 19
-bbLeanBar.alwaysOnTop: false
-bbLeanBar.clock.tips: true
-bbLeanBar.clock.Btn1Click: 
-bbLeanBar.clock.Btn2Click: 
-bbLeanBar.clock.Btn3Click: 
-bbLeanBar.clock.Btn4Click: 
-bbLeanBar.clock.Btn5Click: 
-bbLeanBar.clock.Btn6Click: 
-bbLeanBar.arrowBullets: false
-bbLeanBar.2.placement: BottomCenter
-bbLeanBar.2.position.x: 960
-bbLeanBar.2.position.y: 1080
-bbLeanBar.2.useSlit: false
-bbLeanBar.2.alwaysOnTop: false
-bbLeanBar.2.autoHide: false
-bbLeanBar.2.clickRaise: true
-bbLeanBar.2.snapWindow: true
-bbLeanBar.2.pluginToggle: true
-bbLeanBar.2.transparent: false
-bbLeanBar.2.alpha.value: 255
-bbLeanBar.2.icon.saturation: 95
-bbLeanBar.2.icon.hue: 63
-bbLeanBar.transparent: false
 
+------------
+# Icons
+bbLeanBar.smallIcons: true
+bbLeanBar.icon.saturation: 20
+bbLeanBar.icon.hue: 60
 
+# ------------
+# Clock-Format
+bbLeanBar.strftimeFormat: %d %a %#H:%M
 
+# ---------------
+# Special Options
+bbLeanBar.autoFullscreenHide: true
+bbLeanBar.setDesktopMargin: true
+bbLeanBar.sendToSwitchTo: true
+bbLeanBar.sendToGesture: true
 
+# -------------------------
+# hidden icons (auto saved)
+bbLeanBar.tray.hidden.count: 0
