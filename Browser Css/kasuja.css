@@ -1,8 +1,13 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 
-#main-window {
-margin-top: -13px !important;
+#main-window[sizemode=normal] {
+  margin-top: -13px !important;
+}
+
+
+#main-window[sizemode=maximized] {
+  margin-top: -1px !important;
 }
 
 #browser-border-start, #browser-border-end {
@@ -66,7 +71,7 @@ select > input {
 
 /**TABS**/
 
-#TabsToolbar {
+#TabsToolbar{
   margin-left: -6px !important;
   margin-right: -6px !important;
   border: none !important;
