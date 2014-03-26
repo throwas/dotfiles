@@ -1,7 +1,7 @@
 @-moz-document domain("boards.4chan.org") {
 /* Relative to the general appearance of 4chan. */
 body {
-    background: #efefef !important;
+    background: #ebebeb !important;
     font-family: 'Open Sans', sans-serif !important;
     color: #666 !important;
     margin: auto !important;
@@ -105,20 +105,35 @@ div.ad-plea {
 }
 
 /* Display board banner? */
-.boardBanner {
-    display: none !important;
+div.boardBanner > img {
+display: none !important;
 }
+
+.boardTitle{
+    padding-top: 36px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    color: #666999!important;
+}
+
+.boardSubtitle {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400 !important;
+    color: #666999!important;
+}
+
 
 /* Relative to posts. */
 .post.reply {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 14px !important;
     background: #f9f9f9 !important;
-    color: #555 !important;
+    color: #666 !important;
     width: 100% !important;
     border: 0 !important;
     padding: 6px !important;
-    box-shadow: #afafaf 0 0 2px !important;
+    box-shadow: #afafaf 1px 1px 4px !important;
 }
 
 /* Relative to the thread */
@@ -207,7 +222,7 @@ a.hide-reply-button > span {
 .postInfo a,
 div.postInfo {
     color: #6f6f6f !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
 }
 
 /* Relative to file info, i.e. filename, file size, resolution, etc. */
@@ -314,11 +329,5 @@ opacity:0 !important;
     position: fixed !important;
     opacity: 100 !important;
 }
-
-/*Thread watcher icon */
-
-/*#thread-watcher .fa-bars:before {
-display:none !important;
-}*/
 
 }
