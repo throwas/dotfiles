@@ -5,53 +5,33 @@
   margin-top: -13px !important;
 }
 
-
 #main-window[sizemode=maximized] {
   margin-top: -1px !important;
 }
 
-#browser-border-start, #browser-border-end {
-display: none!important;
- }
-
-#main-window{
-
-}
-
-#main-window #appmenu-button,
-#appmenu-button-container {
-  background: none !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  width: 20px !important;
-  margin-right: 2px !important;
-  position: relative !important;
-  border:none !important;
-  box-shadow: none !important;
-} 
-
-#appmenu-button dropmarker { 
-display:none !important;
-}
-
+/**HIDE ME**/
+#appmenu-button dropmarker,
+#identity-box,
+#urlbar-icons > image,
+#urlbar-container dropmarker,
 #urlbar-reload-button,
 .urlbar-history-dropmarker,
+#tabbrowser-tabs .scrollbutton-up,
+#tabbrowser-tabs .scrollbutton-down,
+toolbar#addon-bar toolbarbutton .toolbarbutton-menubutton-dropmarker,
+toolbar#addon-bar #addonbar-closebutton,
+#searchbar-container dropmarker
+#browser-border-start, #browser-border-end,
 #star-button,
 #page-proxy-favicon,
 #go-button,
 #notification-popup-box,
-#tabbrowser-tabs .scrollbutton-up,
-#tabbrowser-tabs .scrollbutton-down,
 #browser-border-start,
 #browser-border-end,
 statusbarpanel,
-#identity-box,
-#urlbar-container dropmarker,
-toolbar#addon-bar toolbarbutton .toolbarbutton-menubutton-dropmarker,
-toolbar#addon-bar #addonbar-closebutton,
 #appmenu-toolbar-button > .toolbarbutton-text,
-#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker
-  display: none !important;
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker{
+display: none !important;
 }
 
 select > button,
@@ -60,13 +40,13 @@ select > input {
 }
 
 #content[disablehistory] {
-  background-color: #161616 !important;
+background-color: #161616 !important;
 }
 
 #_dlbar_finTipContent {
-  background: #fafafa !important;
-  border: 1px solid gray !important;
-  border-radius: 0px !important
+background: #fafafa !important;
+border: 1px solid gray !important;
+border-radius: 0px !important
 }
 
 /**TABS**/
@@ -175,7 +155,7 @@ margin-right: -5px !important;
 #main-window .tabbrowser-tab[selected] .tab-stack {
   background-color: #ebebeb !important;
   box-shadow: none !important;
-  color: #444 !important;
+  color: #555 !important;
 }
 
 /* Pinned tab titlechange */
@@ -196,36 +176,6 @@ max-width:14px!important;
 margin-top:1px!important;
 }
 
-/* new tab button */
-
-.tabs-newtab-button {
-  float: right !important;
-  margin-top: 1px !important;
-  padding-left: 2px !important;
-  padding-right: 2px !important;
-  background: #ebebeb !important;
-  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, .5) !important;
-  border: 1px solid rgba(71,79,115,.25) !important;
-  border-bottom: none !important;
-  border-radius: 2px 2px 0 0 !important;
-}
-
-.tabs-newtab-button .toolbarbutton-icon {
-  margin-bottom: -3px !important;
-}
-
-.tabs-newtab-button:hover {
-  background-color: #ebebeb !important;
-}
-
-.tabs-newtab-button:active {
-  background-color: #ebebeb !important;
-  box-shadow: none !important;
-  color: #444 !important;
-}
-
-
-
 /*URL BAR*/
 
 #main-window[sizemode=normal] #browser-bottombox {
@@ -236,7 +186,7 @@ margin-top:1px!important;
   margin-bottom: -1px !important; 
 }
 
-/* url bar container */
+/* URL CONTAINER */
 
 #nav-bar {
   border-radius: 0 !important;
@@ -255,17 +205,7 @@ margin-top:1px!important;
   margin-top: -1px !important;
 }
 
-/* "combines" stop and reload button */
-#stop-button[disabled="true"],
-#stop-button:not([disabled]) + #reload-button { 
-  display: none !important;
-}
-
-toolbarbutton {
-  margin: 0 5px !important;
-}
-
-/* actual url bar */
+/* Actual URL */
 
 #urlbar {
   background: #fcfcfc !important;
@@ -359,158 +299,41 @@ toolbarbutton {
   visibility: visible!important;
 }
 
-/* Icon replacements
-    Credit to hdni for these. https://github.com/hdni */
-.tabs-newtab-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QgJAhMQUNAkggAAAC5JREFUOMtjYBjeoKh78f+i7sX/8alhotSSgTeAEd3PxGjqK41lpJoLRmNhWAAAHjsOjI3QxdAAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0) !important;
-    opacity: 1.0;
-    transition: all 0.2s ease 0s;
-}
+/* Icon replacements*/
 
-.tabs-newtab-button:hover .toolbarbutton-icon,
-.tabs-newtab-button:active .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QgJAhkOUDDxawAAACdJREFUOMtjYBje4D8U4FPDRKklA28AI7qfidLEyMhINReMxsKwAACAUhQA+0tI1AAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0) !important;
-    transition: all 0.2s ease 0s;
-}
-
-#back-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy0m28VklQAAAMZJREFUOMvd0T1KA1EYheEnmj2ICVFQCaS3DSSmcA0WF7dwFzDlXcD0llOmiBuQKW1Mo6JL8KdxBYLNLQTHSaYS/OpzXj7ew19fb1OgKKs9LDFNMfzI9zeU93GDCZ6bMjst5SPc5vIj5lsDirI6Ro1D3GORYnjbClCU1UkuH+AOsxTD+2+fNn1whRE+cZli+Gjz1AS4wBN2sSrKatAJkGJ4xVkWN0bdBmmUmIUt8PANMuw0YxZ3nvcf47oTIENe8v5rnPqf9wUzkTMMOOq3ogAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-}
-
-#back-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy8ewfG+iQAAAMNJREFUOMvd0T1KA1EYheEnmj2IEQ2oBNJbjhBNkWY2EBhwYba3szDFbUOaCzbaGNEl+NO4gkCaWwQcJ5lK8KvPefl4D399nW2BoqwOcIfLFMOPfHdL+RBzDPFWl9lrKJ/iIZdfcLUzoCirMyzQxzPGKYbPnQBFWZ3n8gkeMUoxfP32ad0HtzjGCjcphu8mT3WAKV6xj/uirHqtACmGD1xncQMsmiC1ErOwMZYbkKNWM2Zxk7z/ALNWgAx5z/s/4cL/vDUkuzMMFHQPlgAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
-}
-
-#back-button[disabled] .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzIZoPlHNgAAAL9JREFUOMvd0TFKQ0EUheEvmj2IigZUAvbTDsRkwDWkcmEuwUIX8EKKV9iMjQZdQhIbVyDYTBHI8yWvErz1OT+X//DX19sVqOp8hAfEFMNWvr+jfIwZrvHRlDloKV/guZQXuNkbUNX5EnMM8IpJimG9F6Cq81UpnyNjlGL4/O3Tpg/ucYZv3KUYvto8NQGmeMchHqs6n3QCpBhWGBdxQ8zbII0Si7AJ3jYgp51mLOJuy/5DPHUCFMiy7P+C4H/eD40jMwzOh18wAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
-}
-
-#forward-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy4pYFcqxwAAAMxJREFUOMvd0jFKQ0EYxPFfPIWB2BkUWxsbIUQQe+v1DHuAV7xiD7AHsNvWMxhJIYiFIiiCdoqgjZYWFjavkGCeeTaCUw7Mn+Gbj79W7zuzyuUdF9hPMTy1AZbm+LfYwkmVy+A3gF1cYYjTKpfVToAUwwtGOMcKJlUuwy4NpBhemyZnGGBa5bKxMKCBvOEAH1jGYV3XvR9X+LJGH8dYxz3GKYaHhRrMhG+wPRtu+4M+JljDNXZSDM9djnjUhO+wNy/cBtjEJUYphkf/W59X/DjuQnsxTQAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-}
-
-#forward-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzA3ThkoewAAAMlJREFUOMvd0rFKA0EYxPFffAoDsTMotjYWJwQFsdgu7eKz3INYbmm5tRFZBLFQBEXQLiJoo6WFhc0VEsyZsxGccmD+DN98/LV635lViO+4xLjk9NQGWJrj32ELJ1WIg98A9nCNIc6qEFc7AUpOLxjhAiuYVCEOuzRQcnptmpxjgNMqxI2FAQ3kDQf4wDIO67ru/bjClzX6OMY6HrBTcpou1GAmfIvt2XDbH/QxwRpusFtyeu5yxKMmfI/9eeE2wCauMCo5Pfrf+gS94Dm5ts5PgAAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
-}
-
-#forward-button[disabled] .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzIraC4WtgAAAMdJREFUOMvd0jFKQ0EYxPFfPIWB2BkUW7ewWQi6iL29Z3kH8QgeYTGSBUF8oAiKoF2CoI2WFhY2r5Bgnnk2glMOzJ/hm4+/Vu87M5f6HVc4TDE8tQFWFvj32MFZLvXgN4B93GCI81zq9U6AFMMLRrjEGsa51MMuDaQYXpsmFxhgkku9tTSggbzhCB9YxXFVVb0fV/iyRh+n2MQjdlMM06UazIXvEOfDbX/QxxgbuMVeiuG5yxFPmvADDhaF2wDbuMYoxTDzv/UJkwA4UtKByTsAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
+toolbarbutton {
+  margin: 0 5px !important;
 }
 
 #downloads-indicator-icon {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy4FUo9GJAAAAK5JREFUOMvtky8KQkEQxn+aPYHgHWxmq8UmGKYqBmUOsHEOsFXrnuCdwSIWy7uBoFkQk6DlhWV15YmIxYEJ8+cbPuabgV9bI1dwPtzi2FSe9jY/ZfAfEKngfFgCk5q4lalMUwYzoKgBLqrexztwPrSANdDNgLdA31Qu2UNyPrSBDdBJSnugZyrHl0s0lQMwBM5R+gQMUnBWBVPZASPgWvnYVMq3JXI+LJwP869+4x06qSlbSJ678AAAAABJRU5ErkJggg==)!important;
-    -moz-image-region: rect(0,16px,16px,0) !important;
+margin-left: -5px !important;
+margin-right: -5px !important;
+opacity: .7 !important;
 }
 
-/* The hover state for the downloads button doesn't work! Neither does the notification icon */
-#downloads-indicator:hover #downloads-indicator-anchor {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy8zhC7i/AAAALhJREFUOMvtk60KAlEQhT+1+gSCRqPYLLdY5YJNEG5WfCTN4wMs3GJ2glgEMYlJQfOCmAQtG5Z1ryyIWByYMDPnDIf5gV9bKVQw1j3SsXrJxZY/VfBvkNqCsW4KjAryZuplnFUwAaIC5CjBvt6Bsa4KLIF2gLwGuurlFjwkY10NWAH1TOkEdNTL5e0Q1csZ6APXVDoGellycAvqZQMMgHviQ/Wyy8NWQpM67reHRrMVAwv1Mv/aNz4ByvQwmCXjePkAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
+#main-window:not([privatebrowsingmode]) #appmenu-button{
+background-image: url('http://i.imgur.com/0S0Lr.png') !important;
+opacity: .7 !important;
+background-repeat: no-repeat !important;
+background-position: center !important;
+width: 20px !important;
+margin-right: 2px !important;
+margin-left: 5px !important;
+position: relative !important;
+border:none !important;
+box-shadow: none !important;
 }
 
-#downloads-indicator-notification {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFy8zhC7i/AAAALhJREFUOMvtk60KAlEQhT+1+gSCRqPYLLdY5YJNEG5WfCTN4wMs3GJ2glgEMYlJQfOCmAQtG5Z1ryyIWByYMDPnDIf5gV9bKVQw1j3SsXrJxZY/VfBvkNqCsW4KjAryZuplnFUwAaIC5CjBvt6Bsa4KLIF2gLwGuurlFjwkY10NWAH1TOkEdNTL5e0Q1csZ6APXVDoGellycAvqZQMMgHviQ/Wyy8NWQpM67reHRrMVAwv1Mv/aNz4ByvQwmCXjePkAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0) !important;
+#main-window:not([privatebrowsingmode]) #appmenu-button .button-box .button-icon,
+#appmenu-button-container { display:none!important; }
+
+#main-window:not([privatebrowsingmode]) #appmenu-button:hover:not(:active):not([open]) {
+opacity: 1 !important;
 }
 
-#urlbar-reload-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzk4D2SOowAAASJJREFUOMvN0r9qVEEUBvDfLku0CAsJWBmrNFsFAwNuM1Umdlb7BqaJkBR5i9VCn0FLhTSBNLnd7bKXkEaJbSBpRSzUbTbNCJfN3evaeWA4M3P4vvOdP/zFirL6WJTVxqJ4ZwmCGX7iDcYphl+tBEVZreAl9rCJtVr4CocphuLPR28O/Bgn2F4gaHWOULcGfojTDL7GCI9yeIrXGKQYPtUJ6gpeYSuDn6YYvmXiAgcphq+tTSzKaoKAUYrh2JLWrd0H2Z/5B+s1qJm1jLSP7/iRYujPK/iS/U5LwufZf24q4X3246Ks1hqyr+Ntfn5oauIDnNcmcZT70cEu3uEJLvEsxTC9t4lLLNIFXqQYbptKkGK4wTDvRIXf+Uywj2Ed/H/YHV+FUeRkRIlHAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#reload-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAvADDAMwtT/joAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QgJAh8PcW1mewAAASFJREFUOMvN0r9KXEEUBvCfskiKIKxgpVZptgoRLOwl6aysp1EQBS1yYd5h9cL4AlqY20WwCaTRNzCIjaKtoK2IhZpm00zgslzXtfPAcGbm8H3nO394xYqy+lmU1fRL8ZEhCHp4xDa6KYangQRFWY1hGSv4hHYtfInNFMPx/49WH3gKvzD7gqCPfYRGa+AP+J3B11jCZA7/xRY6KYaDOkFdwTo+Z/CXFMNdJj7GRorhamATi7I6wRyWUgyHhrTR2r2T/ZE3WKtBTW/ASMdxj4cUw3i/govsFwYk/Jb9eVMJ+9l3i7JqN2SfQMrPH00l7GI1T+KsKKvvuR8j+IodzOAMe42bOMQinWIxxXDbVIIUww3m8078wXM+J1jDfB38PuwfO61OvO23THsAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#urlbar-reload-button:hover .toolbarbutton-icon,
-#reload-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzEU9WVoSAAAAS5JREFUOMvN0j9LXFEQBfDfGgkpZEElICSxCYiVGLB8nWj1rGxflYAgMUU+QxpjkXwBRZRbKaTJxSaWtwsYCSiJpYWtiEWCIKa5C4/l7bp2mebcO8OcOfOHe6woq72irJ73ircGILjDH2xgPcXwty9BUVaP8Rpv8BKjtfAvvEsxHHYcw13Jz/AVr3oIGukiNFRLfoKDnHyOZTzN4Rt8xHSKYb9OUFewipmcPJtiuMzEh1hLMfzuO8SirL5jDssphi8GtKHaezrjNw+w4QY1d31W2sYVrlMM7W4Fpxnn+xRczHjS1MJOxvWirEYbqo/hU/7uNrWwiZW8ieOirN7nebSwgM94gWNsNV7iAId0hKUUw0XH8agePT/7eT05NbONC0xgHLf4gQ94m2K48l/ZPxI6TSaEYWgiAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
-}
-
-#urlbar-stop-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzoIApDtzAAAALNJREFUOMvtkrEOwVAUhj8ixGDyAH2Ju17TTRpBotjwdMREmiAS0knXPonYlYXlH6RKPUDPdPLnP+d+58+FsipZIYqTM3AFps6am7QmsALazprOu7+Ws/QCjIEwipOhtBDwgXXWnLdgBrQ0sBGlD5yAeeEJQq7rtYGkHTBx1jyy3uqPfJ5f+sIQG0LvAQd5usBeFPcigqWGjwpzpL4PLP45wQO2QOCsSZ01KRAoB6/8+Z/1ApYcK4kA4duDAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#stop-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAcgCLAKPY7g7jAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QgJAiESU64R3wAAALNJREFUOMvtkjEKwkAQRZ8iioWVB8hNbIOoYNRO9xKBPUVgLxGxUgIqgpYeR+yNNtr8QtZoPECmGj5/Zt98Fqqq+UKcpGfgCsydNTdpbWAFdJ01vXd/o2DpBZgCWZykY2kZEAJr31y0YAF0NLARZQicAFN6gpCbem0kaQfMnDUP31v/kc/zS18aYkvoA+AgTx/Yi+JeRrDU8FFhTtQPgfSfEwJgC0TOmtxZkwORcgiqn/9ZLx6sLDQ8GAC5AAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#urlbar-stop-button:hover .toolbarbutton-icon,
-#stop-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzElpLtocgAAAK9JREFUOMvtkjEKwkAQRZ8iioWVB8hFgm0QVzBq53o6FysloIugpexpxN5oo80vJEbjATLV8Pkz++azUFejKMTGnoErsAje3aR1gTXQD94N3v2tkqUXYAZksbETaRmQAJuiuWyBBXoa2IoyAU7AsvIEIbf12ljSHpgH7x5Fb/NHPs8vfWWIHaGPgIM8Q8CL4l5F4DR8VJhT9QZY/XNCBOyANHiXB+9yIFUOUf3zP+sFmxgs8DCnbAkAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
-}
-
-#urlbar-go-button .toolbarbutton-icon,
-#go-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzktYrlqSAAAAKRJREFUOMvNkz0KAkEMhT9FPIVnsEolpAt7AEvdAwh2nsArWIpgYWW1JxgQnGaLuYulgvhTCTLKMswi+LrkhS88QuDXcj6MmvxuAuPgfCjbAPrAzvmw/GZ2EiI83sotMDOV6wcgGmxSBZSmck6NEGsM1M6HQS4AYAhs2gCOwCQXsAcKUznlXGENzE3l9mr0ErfegYWprGIjBXABpqZS5f5CwV/rCfTQK2u0QHHkAAAAAElFTkSuQmCC) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#urlbar-go-button:hover .toolbarbutton-icon,
-#go-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzEHcdsplgAAAKJJREFUOMvNkz0KAkEMhT9FPIVn8AAy9VZTWWoOINh5Aq9gKYKFpLDaKr0gKfY2lgriTyXIKsswi+Drkhe+8AiBXytEGTX53QTGIUSRNoA+sAtRlt/MTkKEx1u5BWZuev0A1AabVALipufUCHWNgSpEGeQCAIbApg3gCExyAXugcNNTzhXWwNxNb69GL3HrHVi46apupAAuwNRNy9xfKPhrPQHpqSidAzUQrAAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    transition: all 0.2s ease 0s;
-}
-
-#home-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAMAAADjyg5GAAAAUVBMVEV7j6F8kKN8kKN8kKN8kKN8kKN3i518kKN8kKN1h5l8kKN0h5l8kKN8kKN4i518kKN8kKN8kKN8kKN8kKN8kKMAAAB7j6J7jqF2iZt1iJp8kKOXqiNLAAAAFnRSTlOmnXdxTEjGBSvpE+uWKMOVEgQ/Mw8AETRxYgAAAExJREFUeNqlxzcWgDAQQ8ElZwy2RdD9Dwpe4JmCjt9IIwjNpq/0KKeRLNuHQ8Ozrr5Y7NS2PDBbebekkISvRHSinY2wTuAjPb4J/OcB04wSkK49jr4AAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-}
-
-#home-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAMAAADjyg5GAAAATlBMVEU7S1s8TFw8TFw8TFw8TFw8TFw4R1Y8TFw8TFw6SVk8TFw4R1Y5SVg8TFw8TFw8TFw8TFw8TFw8TFw8TFw8TFwAAAA5SFc4R1Y7S1s8TFwQbC15AAAAFnRSTlOmnXdxTEjpBSvDE+vGligEEpU/Mw8AQxGXrgAAAEtJREFUeNqlx0kWgCAQQ8F2nkWBKLn/RZVWHy7c+TdJCWJmnRo9yqUjx/7hXPNsaC9WO7WtjCwC70IOyfhKRCfZ2QTrBD7R45vAfx6mWhIb4vPofAAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#bookmarks-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEV0h5l8kKN6jqB8kKN8kKN8kKN6jqB0h5l8kKN8kKN3ipx3ipx5jJ92iZt8kKN2ipx8kKN2ipx8kKN8kKN1iJp8kKN1iJp8kKN8kKN8kKMAAAB7j6J8kKP+CkikAAAAG3RSTlPsia0QiA+s65iXzcy42DjRg9ATNN4N3QFMWgBqox/DAAAAX0lEQVR42n3P2wqAIAyAYTufPKeW0/d/zqLVwKD+u32wwVh+9Qnz8oJ9L8FtmysgAkSCMa4ezvwapwuChTsbcEU0OHfiuaEQFB1lCAMBR+AELUhjJFQEuk45p17/PkcdysYZkV4wb2cAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#bookmarks-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAV1BMVEU7Slo8TFw4R1Y8TFw8TFw8TFw4R1Y7S1o8TFw8TFw5SVg5SVg5SFc8TFw6Slk5SFg8TFw5SFg8TFw5SFc8TFw8TFw5SFc8TFw8TFw8TFwAAAA7S1s8TFwOeUCpAAAAG3RSTlOtiOyJEA/rrJiXzM3YOLjRg9AT3jQN3QFMWgAM3HECAAAAX0lEQVR42n3P2wqAIAyAYTufPKeW0/d/zqLVwKD+u32wwVh+9QnL/IJ9L2HdtrWACBAJxug8nHkXpwuChTsbcIW3OHf8uaEQFB2tEXoCiSAJKhDGCGgINEs5p0H/PkcdyqsZkWd+h1oAAAAASUVORK5CYII=) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#new-tab-button .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAD1BMVEU8TFw8TFw8TFwAAAB8kKNhTh9eAAAABHRSTlMQDwEA8c1HeQAAAC1JREFUeNqlzzEKAAAIAsDK/v/mhqLBIILcPHBQnPIAMwJgBVQaJLuOyRX+XwIORgPeAFHppAAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
-}
-
-#new-tab-button:hover .toolbarbutton-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAD1BMVEU8TFw8TFw8TFwAAAA8TFwRW/cAAAAABHRSTlMQDwEA8c1HeQAAAC1JREFUeNqlzzEKAAAIAsDK/v/mhqLBIILcPHBQnPIAMwJgBVQaJLuOyRX+XwIORgPeAFHppAAAAABJRU5ErkJggg==) !important;
-    -moz-image-region: rect(0,16px,16px,0)!important;
-    opacity: 1.0 !important;
+#main-window:not([privatebrowsingmode]) #appmenu-button:hover:active,
+#main-window:not([privatebrowsingmode]) #appmenu-button[open] {
+background-image:none !important;
 }
 
 /**SCROLLBAR**/
@@ -567,7 +390,7 @@ scrollbar > slider > thumb:active {
   background-color: #888 !important;
 }
 
-/**ADD-ONS PAGE*/
+/**ADD-ONS PAGE**/
 
 #categories {
   width:  160px !important;
@@ -658,7 +481,7 @@ scrollbar > slider > thumb:active {
 }
 
 
- /* ADD ON BAR */
+/**ADD ON BAR**/
 toolbar#addon-bar
 {
 font-size: 12pt !important; font-family: 'Open Sans'  !important;
@@ -730,20 +553,6 @@ scrollbox#PlacesToolbarItems toolbarbutton:first-child:active
  border-left:0!important;
 }
 
-
-/* HIDDEN ELEMENTS */
-#identity-box,
-#urlbar-icons > image,
-#urlbar-container dropmarker,
-#tabbrowser-tabs .scrollbutton-up,
-#tabbrowser-tabs .scrollbutton-down,
-toolbar#addon-bar toolbarbutton .toolbarbutton-menubutton-dropmarker,
-toolbar#addon-bar #addonbar-closebutton,
-#searchbar-container dropmarker
-{
-display:none!important;
-}
-    
 /* Gray icon saying plugin is active and providing option to block */
 #plugins-notification-icon{
   width: 0px !important;
