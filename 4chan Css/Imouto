@@ -1,5 +1,6 @@
 @-moz-document domain("boards.4chan.org") {
 /* Relative to the general appearance of 4chan. */
+
 body {
     background: #ebebeb !important;
     font-family: 'Open Sans', sans-serif !important;
@@ -87,6 +88,16 @@ div.pagelist {
     color: #232323 !important;
 }
 
+/* Thread Indexing */
+
+#index-mode,
+#index-sort,
+#index-size {
+font-family: 'Open Sans', sans-serif !important;
+font-size: 10pt !important;
+color: #888 !important;
+}
+
 /* Clean up. */
 .bottomCtrl.desktop,
 #absbot.absBotText,
@@ -134,6 +145,10 @@ display: none !important;
     border: 0 !important;
     padding: 6px !important;
     box-shadow: #afafaf 1px 1px 4px !important;
+}
+
+.yotsuba:root .hide-post-button {
+    display: none !important;
 }
 
 /* Relative to the thread */
@@ -274,7 +289,7 @@ div.fileText {
 
 /* Movable QR? */
 #qr span.move {
-    display: none !important;
+    display: inline !important;
 }
 
 /* Remove menu */
