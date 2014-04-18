@@ -45,6 +45,14 @@ a {
     color: #eee !important;
 }
 
+
+/* Board List */
+
+#board-list { 
+    text-align: center !important;
+    margin-left: -70px !important;
+    }
+
 /* Appearance of the menus. */
 #menu.dialog,
 .entry {
@@ -136,39 +144,57 @@ display: none !important;
 
 
 /* Relative to posts. */
+
 .post.reply {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 14px !important;
-    background: #f9f9f9 !important;
+    background: #f8f8f8 !important;
     color: #666 !important;
     width: 100% !important;
     border: 0 !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
     padding: 6px !important;
-    box-shadow: #afafaf 1px 1px 4px !important;
+    box-shadow: rgba(200,200,200,.9) 1px 2px 4px 2px !important; 
 }
 
-.yotsuba:root .hide-post-button {
+.replyContainer {
+    display:flex;
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+}
+
+.yotsuba:root .hide-post-button,
+.yotsuba-b:root .hide-post-button {
     display: none !important;
 }
 
 /* Relative to the thread */
 .thread {
-    margin-top: -10px !important;
-    margin-right: 30px !important;
-    margin-left: 15px !important;
+    margin-top: 53px !important;
+    margin-right: 110px !important;
+    margin-left: 110px !important;
 }
+
 div.postContainer.opContainer {
     display: inline-block !important;
     width: 100% !important;
     margin: auto !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    background: #f9f9f9!important;
+    color: #666 !important;
+    padding: 6px !important;
+    box-shadow: rgba(215,215,215,.9) 1px 2px 4px 2px !important; 
 }
+
 .inline {
     padding-left: 15px !important;
     padding-right: 15px !important;
     border: 0 !important;
 }
 .inline .post.reply {
-    background-color: #e8e8e8 !important;
+    background-color: #ebebeb !important;
     border: 0 !important;
 }
 
@@ -226,6 +252,35 @@ span.quote {
     left: 0px;
 }
 
+.stub .menu-button,
+    .postInfo .menu-button {
+        opacity:0;
+        float:right;
+        right:-2px;
+        top:-10px;
+        transition:all 0.25s ease;
+    }
+    .stub .menu-button,
+    .opContainer .postInfo .menu-button,
+    .postContainer .postInfo .menu-button.open,
+    .postContainer:hover .postInfo .menu-button {
+        opacity:1;
+        top:-1px;
+    }
+    .stub .menu-button,
+    .opContainer .postInfo .menu-button {
+        right:10px;
+    }
+    .inline .postInfo .menu-button {
+        float:none;
+        opacity:1;
+        right:0!important;
+        top:0!important;
+    }
+    .stub .menu-button .fa-bars:before,
+    .postInfo .fa-bars:before {
+        content:""!important;
+    }
 
 /* Hide "hide reply" buttons. */
 .postInfo > input,
@@ -252,16 +307,35 @@ div.fileText {
     box-shadow: none !important;
 }
 
-
 /* Relative to the quick reply. */
+
+.close.fa.fa-times{
+display: none !important;
+}
+
+#qr.dialog.has-captcha.autohide{
+box-shadow: #afafaf 1px 2px 4px 2px !important;
+border: 1px solid #ccc !important;
+}
+
 #qr {
     background: #e8e8e8 !important;
     color: #555 !important;
     border: none !important;
-    border-radius: 2px !important;
-    box-shadow: none !important;
+    border-radius: 0px !important;
     transition: all 0.2s ease 0s;
+    box-shadow: #afafaf 1px 2px 4px 2px !important;
 }
+
+#qr option:hover,
+#dump-button:hover,
+:root .field:hover,
+#menu .entry.focused,
+:root .field:focus {
+  background:#dedede !important;
+  border-color:#dedede !important;
+}
+
 #qr form {
     bottom: 12px !important;
     right: 0% !important;
@@ -274,6 +348,7 @@ div.fileText {
     border-color: #ccc !important;
     border-radius: 4px !important;
 }
+
 #dump-button {
     background: #e8e8e8 !important;
     border-color: #ccc !important;
@@ -311,7 +386,7 @@ div.fileText {
 
 /* Remove bar above the fields. */
 #qr > div {
-    position: fixed !important;
+    position:  !important;
 }
 
 /* Relative to 4chan X's menu */
@@ -326,10 +401,10 @@ a.tab-main.tab-selected {
 
 /* Thread Watcher */
 
-
 #thread-watcher  { 
-opacity:0 !important;
+opacity: 0 !important;
 }
+
 
 #thread-watcher:hover,
 #thread-watcher:active,
