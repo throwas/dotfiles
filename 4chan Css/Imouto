@@ -9,10 +9,10 @@ body {
     font-size: 14px !important;
 }
 hr {
+    margin-top:-15px !important;
     padding-top: 5px !important;
     border: 0 !important;
 }
-
 
 /* Links */
 a {
@@ -82,19 +82,19 @@ div.pagelist {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 0.750rem !important;
     background: transparent !important;
-    color: #232323 !important;
+    color: #777 !important;
     border-style: none !important;
 }
 
 #update-status{
-        color: #667399 !important;
+        color: #777 !important;
         }
 
 /* Thread updater menu */
 #index-search.field:hover,
 #updater.dialog:hover {
     background: #e8e8e8 !important;
-    color: #232323 !important;
+    color: #777 !important;
 }
 
 /* Thread Indexing */
@@ -125,16 +125,18 @@ div.ad-plea {
 }
 
 /* Display board banner? */
-div.boardBanner > img {
-display: none !important;
+
+div.boardBanner {
+margin-top: 40px !important;
 }
 
 .boardTitle{
-    padding-top: 36px !important;
+    /*padding-top: 36px !important;
     font-family: 'Open Sans', sans-serif !important;
     font-size: 28px !important;
     font-weight: 400 !important;
-    color: #666999!important;
+    color: #666999!important;*/
+    display: none !important;
 }
 
 .boardSubtitle {
@@ -171,6 +173,7 @@ display: none !important;
 }
 
 /* Relative to the thread */
+
 .thread {
     margin-top: 53px !important;
     margin-right: 110px !important;
@@ -187,6 +190,8 @@ div.postContainer.opContainer {
     color: #666 !important;
     padding: 6px !important;
     box-shadow: rgba(215,215,215,.9) 1px 2px 4px 2px !important; 
+    margin-top: -10px !important;
+    margin-bottom: 10px !important;
 }
 
 .inline {
@@ -194,6 +199,7 @@ div.postContainer.opContainer {
     padding-right: 15px !important;
     border: 0 !important;
 }
+
 .inline .post.reply {
     background-color: #ebebeb !important;
     border: 0 !important;
@@ -247,6 +253,7 @@ span.quote {
 }
 
 /* Post menu button. */
+
 .post .menu-button {
     float: right;
     position: relative;
@@ -254,33 +261,52 @@ span.quote {
 }
 
 .stub .menu-button,
-    .postInfo .menu-button {
-        opacity:0;
-        float:right;
-        right:-2px;
-        top:-10px;
-        transition:all 0.25s ease;
+.postInfo .menu-button {
+    opacity:0;
+    float:right;
+    right:-2px;
+    top:-10px;
+    transition:all 0.25s ease;
+}
+    
+.stub .menu-button,
+.opContainer .postInfo .menu-button,
+.postContainer .postInfo .menu-button.open,
+.postContainer:hover .postInfo .menu-button {
+    opacity:1;
+    top:-1px;
+}
+
+.stub .menu-button,
+.opContainer .postInfo .menu-button {
+    right:10px;
+}
+
+.inline .postInfo .menu-button {
+    float:none;
+    opacity:1;
+    right:0!important;
+    top:0!important;
+}
+
+.stub .menu-button .fa-bars:before,
+.postInfo .fa-bars:before {
+    content:""!important;
+}
+
+.dialog.submenu,
+.entry,
+#menu .settings-link.entry,
+#menu .entry.unwatch-thread {
+    color: #888 !important;
+    font-family: "Open sans" !important;
+    border: 0 !important;
+    background: #f8f8f8 !important;
     }
-    .stub .menu-button,
-    .opContainer .postInfo .menu-button,
-    .postContainer .postInfo .menu-button.open,
-    .postContainer:hover .postInfo .menu-button {
-        opacity:1;
-        top:-1px;
-    }
-    .stub .menu-button,
-    .opContainer .postInfo .menu-button {
-        right:10px;
-    }
-    .inline .postInfo .menu-button {
-        float:none;
-        opacity:1;
-        right:0!important;
-        top:0!important;
-    }
-    .stub .menu-button .fa-bars:before,
-    .postInfo .fa-bars:before {
-        content:""!important;
+
+.dialog.submenu,
+#menu {
+    box-shadow: #afafaf 1px 2px 4px 2px !important;
     }
 
 /* Hide "hide reply" buttons. */
@@ -320,7 +346,7 @@ border: 1px solid #ccc !important;
 }
 
 #qr {
-    background: #e8e8e8 !important;
+    background: #f8f8f8 !important;
     color: #555 !important;
     border: none !important;
     border-radius: 0px !important;
@@ -345,7 +371,7 @@ border: 1px solid #ccc !important;
     margin-top: 23px !important;
     padding-top: 10px !important;
     padding-bottom: 3px !important;
-    background: #e8e8e8 !important;
+    background: #f8f8f8 !important;
     border-color: #ccc !important;
     border-radius: 4px !important;
 }
@@ -387,7 +413,7 @@ border: 1px solid #ccc !important;
 
 /* Remove bar above the fields. */
 #qr > div {
-    position:  !important;
+    position: relative !important;
 }
 
 /* Relative to 4chan X's menu */
@@ -410,10 +436,10 @@ opacity: 0 !important;
 #thread-watcher:hover,
 #thread-watcher:active,
 #thread-watcher:focus {
-    background: #e8e8e8 !important;
+    background: #f8f8f8 !important;
     color: #555 !important;
     border: #ccc !important;
-    box-shadow: #afafaf 0 0 2px !important;
+    box-shadow: #ccc 1px 2px 4px 2px !important;
     max-width: 200px;
     min-width: 150px;
     padding: 3px;
