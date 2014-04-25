@@ -49,7 +49,7 @@ a {
 }
 
 .shortcut .fa-bars:before {
-    content:"?"!important;
+    content:""!important;
 }
 
 .shortcut .fa-bars {
@@ -138,9 +138,12 @@ option {
 
 #update-status {
     color: #777 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 0.750rem !important;
 }
 
 /* Thread updater menu */
+
 #index-search.field:hover,
 #updater.dialog:hover {
     background: #e8e8e8 !important;
@@ -196,12 +199,17 @@ margin-top: 40px !important;
     color: #666 !important;
     width: 100% !important;
     border: 0 !important;
-    padding: 6px !important;
+    padding: 7px !important;
     box-shadow: rgba(200,200,200,.9) 1px 2px 4px 2px !important; 
+    -moz-box-sizing:border-box!important;
 }
 
-.replyContainer {
-    display:flex;
+
+div.reply {
+    flex:1 0;
+    padding: 7px !important;
+    width:100%;
+    -moz-box-sizing:border-box!important;
 }
 
 .yotsuba:root .hide-post-button,
@@ -211,22 +219,43 @@ margin-top: 40px !important;
 
 /* Relative to the thread */
 
+#unread-line {
+    border:0!important;
+    height:1px!important;
+    margin-top:-10px!important;
+}
+
 .thread {
     margin-top: 53px !important;
     margin-right: 110px !important;
     margin-left: 110px !important;
 }
 
+.replyContainer,
+#qp { 
+    padding: 0px !important;
+    background: transparent !important;
+}
+
 div.postContainer.opContainer {
     display: inline-block !important;
     width: 100% !important;
-    margin: auto !important;
     font-family: 'Open Sans', sans-serif !important;
     font-size: 14px !important;
     background: #f9f9f9!important;
     color: #666 !important;
+    margin: 3px 2px 3px 0px !important;
     padding: 6px !important;
-    box-shadow: rgba(215,215,215,.9) 1px 2px 4px 2px !important; 
+    box-shadow: rgba(215,215,215,.9) 1px 2px 4px 2px !important;
+    -moz-box-sizing:border-box!important;
+}
+
+.postContainer .menu-button {
+    top: -5px !important;
+    opacity:0;
+    float:right;
+    right:-2px;
+    transition:top 0.25s ease, opacity 0.1s ease;
 }
 
 .inline {
@@ -352,7 +381,7 @@ span.quote {
 
 .stub .menu-button .fa-bars:before,
 .postInfo .fa-bars:before {
-    content:"?"!important;
+    content:""!important;
     color: #999 !important;
 }
 
@@ -533,7 +562,7 @@ a.tab-main.tab-selected {
 /* Thread Watcher */
 
 #thread-watcher:before {
-    content:"?";
+    content:"";
     cursor:pointer;
     font-family:FontAwesome;
     font-size:13px!important;
@@ -593,10 +622,9 @@ a.tab-main.tab-selected {
 #thread-stats .move,
 #thread-watcher .move,
 #updater .move {
-    cursor:default!important;
+    cursor: default!important;
     color: #777 !important;
     font-family: "Open Sans", Sans serif !important;
-    font-size: 11pt !important;
 }
 
 /* Blotter */
@@ -606,3 +634,4 @@ a.tab-main.tab-selected {
 }
 
 }
+
