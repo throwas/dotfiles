@@ -1,0 +1,217 @@
+{
+  "version": "3.20.9",
+  "date": 1398463628105,
+  "Conf": {
+    "Desktop Notifications": false,
+    "404 Redirect": true,
+    "Keybinds": true,
+    "Linkify": true,
+    "Time Formatting": true,
+    "Relative Post Dates": false,
+    "File Info Formatting": true,
+    "Thread Expansion": true,
+    "Index Navigation": false,
+    "Reply Navigation": false,
+    "Show Dice Roll": true,
+    "Anonymize": false,
+    "Filter": true,
+    "Post Hiding": true,
+    "Stubs": false,
+    "Recursive Hiding": true,
+    "Auto-GIF": true,
+    "Image Expansion": true,
+    "Image Hover": true,
+    "Image Hover in Catalog": false,
+    "Sauce": true,
+    "Reveal Spoilers": false,
+    "Menu": true,
+    "Report Link": true,
+    "Post Hiding Link": true,
+    "Delete Link": true,
+    "Archive Link": true,
+    "Thread Updater": true,
+    "Unread Count": true,
+    "Hide Unread Count at (0)": false,
+    "Unread Tab Icon": true,
+    "Unread Line": true,
+    "Scroll to Last Read Post": true,
+    "Thread Excerpt": true,
+    "Thread Stats": true,
+    "Thread Watcher": true,
+    "Color User IDs": true,
+    "Quick Reply": true,
+    "Persistent QR": true,
+    "Auto-Hide QR": true,
+    "Open Post in New Tab": true,
+    "Remember QR Size": true,
+    "Remember Subject": false,
+    "Remember Spoiler": false,
+    "Hide Original Post Form": true,
+    "Cooldown": true,
+    "Quote Backlinks": true,
+    "OP Backlinks": true,
+    "Quote Inlining": true,
+    "Forward Hiding": true,
+    "Quote Previewing": true,
+    "Quote Highlighting": true,
+    "Resurrect Quotes": true,
+    "Quote Markers": true,
+    "Fit width": true,
+    "Fit height": false,
+    "Expand spoilers": false,
+    "Expand from here": true,
+    "Current Board": false,
+    "Auto Watch": true,
+    "Auto Watch Reply": true,
+    "Auto Prune": false,
+    "name": "# Filter any namefags:\n#/^(?!Anonymous$)/",
+    "uniqueID": "# Filter a specific ID:\n#/Txhvk1Tl/",
+    "tripcode": "# Filter any tripfag\n#/^!/\n/^!NOiDx\\.cCl2$/\n/^!!LGOfkjdLOSK$/\n/^!X\\.FuJiWarA$/\n/^!KLiPsCH9Dg$/;op:yes",
+    "capcode": "# Set a custom class for mods:\n#/Mod$/;highlight:mod;op:yes\n# Set a custom class for moot:\n#/Admin$/;highlight:moot;op:yes",
+    "email": "",
+    "subject": "# Filter Generals on /v/:\n#/general/i;boards:v;op:only",
+    "comment": "# Filter Stallman copypasta on /g/:\n#/what you're refer+ing to as linux/i;boards:g",
+    "flag": "",
+    "filename": "",
+    "dimensions": "# Highlight potential wallpapers:\n#/1920x1080/;op:yes;highlight;top:no;boards:w,wg",
+    "filesize": "",
+    "MD5": "/Pl21nD8ZNaAuZishuCCymg==/",
+    "sauces": "https://www.google.com/searchbyimage?image_url=%TURL\nhttp://iqdb.org/?url=%TURL\n#//tineye.com/search?url=%TURL\n#http://saucenao.com/search.php?url=%TURL\n#http://3d.iqdb.org/?url=%TURL\n#http://regex.info/exif.cgi?imgurl=%URL\n# uploaders:\n#http://imgur.com/upload?url=%URL;text:Upload to imgur\n#http://ompldr.org/upload?url1=%URL;text:Upload to ompldr\n# \"View Same\" in archives:\n#//archive.foolz.us/_/search/image/%MD5/;text:View same on foolz\n#//archive.foolz.us/%board/search/image/%MD5/;text:View same on foolz /%board/\n#//archive.installgentoo.net/%board/image/%MD5;text:View same on installgentoo /%board/",
+    "Custom CSS": false,
+    "Index Mode": "all pages",
+    "Previous Index Mode": "all pages",
+    "Index Sort": "lastreply",
+    "Index Size": "small",
+    "Threads per Page": 0,
+    "Open threads in a new tab": false,
+    "Show Replies": true,
+    "Refreshed Navigation": false,
+    "Header auto-hide": false,
+    "Header auto-hide on scroll": false,
+    "Bottom header": false,
+    "Top Board List": false,
+    "Bottom Board List": false,
+    "Custom Board Navigation": true,
+    "QR.personas": "#email:\"sage\";boards:jp;always\nemail:\"sage\"",
+    "boardnav": "a-replace ~ g-replace ~  w-replace ~ wg-replace ~ v-replace",
+    "time": "%m/%d/%y(%a)%H:%M:%S",
+    "backlink": ">>%id",
+    "fileInfo": "%l (%p%s, %r)",
+    "favicon": "ferongr",
+    "usercss": "",
+    "Toggle board list": "Ctrl+b",
+    "Open empty QR": "i",
+    "Open QR": "Shift+q",
+    "Open settings": "Alt+o",
+    "Close": "Esc",
+    "Spoiler tags": "Ctrl+s",
+    "Code tags": "Alt+c",
+    "Eqn tags": "Alt+e",
+    "Math tags": "Alt+m",
+    "Submit QR": "Alt+s",
+    "Update": "r",
+    "Watch": "w",
+    "Expand image": "Shift+e",
+    "Expand images": "e",
+    "Front page": "0",
+    "Open front page": "Shift+0",
+    "Next page": "Right",
+    "Previous page": "Left",
+    "Search form": "Ctrl+Alt+s",
+    "Paged mode": "Ctrl+1",
+    "All pages mode": "Ctrl+2",
+    "Catalog mode": "Ctrl+3",
+    "Cycle sort type": "Ctrl+x",
+    "Next thread": "Down",
+    "Previous thread": "Up",
+    "Expand thread": "Ctrl+e",
+    "Open thread": "o",
+    "Open thread tab": "Shift+o",
+    "Next reply": "j",
+    "Previous reply": "k",
+    "Deselect reply": "Shift+d",
+    "Hide": "x",
+    "Beep": false,
+    "Auto Scroll": true,
+    "Bottom Scroll": true,
+    "Scroll BG": false,
+    "Auto Update": true,
+    "Interval": 30,
+    "pinnedThreads": {
+      "boards": {},
+      "lastChecked": 1398455958833
+    },
+    "hiddenPosts": {
+      "boards": {},
+      "lastChecked": 1398455958837
+    },
+    "lastReadPosts": {
+      "boards": {
+        "w": {
+          "1637834": 1644918,
+          "1639418": 1640434,
+          "1650375": 1654654,
+          "1655143": 1656100
+        },
+        "wg": {
+          "5770805": 5770824,
+          "5772065": 5775543
+        },
+        "g": {
+          "41564811": 41566975
+        }
+      },
+      "lastChecked": 1398408581764
+    },
+    "yourPosts": {
+      "boards": {
+        "w": {
+          "1650375": {
+            "1650570": true,
+            "1650586": true,
+            "1650908": true,
+            "1650989": true,
+            "1652942": true,
+            "1653087": true
+          },
+          "1655143": {
+            "1655187": true,
+            "1655189": true,
+            "1655216": true,
+            "1655250": true,
+            "1655584": true
+          }
+        },
+        "wg": {
+          "5772065": {
+            "5773806": true,
+            "5775520": true
+          }
+        }
+      },
+      "lastChecked": 1398455958837
+    },
+    "watchedThreads": {
+      "boards": {
+        "w": {
+          "1655143": {
+            "excerpt": "/w/ - Desktop Thread"
+          }
+        },
+        "g": {
+          "41544269": {
+            "excerpt": "/g/ - Old one is ded // Desktop thread, // >hardmode // >windows only // ...",
+            "isDead": true
+          }
+        },
+        "wg": {
+          "5772065": {
+            "excerpt": "/wg/ - ODT #15"
+          }
+        }
+      },
+      "lastChecked": 1398455958845
+    },
+    "selectedArchives": {}
+  }
+}
