@@ -171,7 +171,7 @@ div.ad-plea {
 /* Display board banner? */
 
 div.boardBanner {
-margin-top: 40px !important;
+margin-top: 60px !important;
 }
 
 .boardTitle{
@@ -227,8 +227,9 @@ div.reply {
 
 .thread {
     margin-top: 53px !important;
-    margin-right: 110px !important;
-    margin-left: 110px !important;
+    margin-right: 40px !important;
+    margin-left: 40px !important;
+    margin-bottom: 40px !important;
 }
 
 .replyContainer,
