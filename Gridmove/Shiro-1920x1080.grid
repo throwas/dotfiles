@@ -1,0 +1,65 @@
+[Groups]
+  NumberOfGroups = 9
+  
+[1]
+
+  TriggerTop    = [Monitor1Top] + 370
+  TriggerRight  = [Monitor1Left] + [Monitor1Width]  /2 + 195
+  TriggerBottom = [Monitor1Bottom] - 30
+  TriggerLeft   = [Monitor1Left] + 35
+  
+[2]
+
+  TriggerTop    = [Monitor1Top] + 30
+  TriggerRight  = [Monitor1Right] - 365
+  TriggerBottom = [Monitor1Bottom] - 30
+  TriggerLeft   = [Monitor1Left] + 365
+  
+[3]
+  
+  TriggerTop    = [Monitor1Top] + 705
+  TriggerRight  = [Monitor1Right] - 35
+  TriggerBottom = [Monitor1Bottom] - 30
+  TriggerLeft   = [Monitor1Left] + [Monitor1Width]  /3 *2
+  
+[4]
+  
+  TriggerTop    = [Monitor1Top] + 30
+  TriggerRight  = [Monitor1Left] + [Monitor1Width]  /2 + 195
+  TriggerBottom = [Monitor1Bottom] - 30
+  TriggerLeft   = [Monitor1Left] + 35
+  
+[5]
+
+  TriggerTop    = [Monitor1Top] + 30
+  TriggerRight  = [Monitor1Right] - 35
+  TriggerBottom = [Monitor1Bottom] - 30
+  TriggerLeft   = [Monitor1Left] + 35
+  
+[6]
+
+  TriggerTop    = [Monitor1Top] + 365
+  TriggerRight  = [Monitor1Right] - 35
+  TriggerBottom = [Monitor1Bottom] - 370
+  TriggerLeft   = [Monitor1Left] + [Monitor1Width]  /3 *2
+  
+[7]
+
+  TriggerTop    = [Monitor1Top] + 30
+  TriggerRight  = [Monitor1Left] + [Monitor1Width]  /2 + 195
+  TriggerBottom = [Monitor1Bottom] - 370
+  TriggerLeft   = [Monitor1Left] + 35
+
+[8]
+
+  TriggerTop    = [Monitor1Top] + 30
+  TriggerRight  = [Monitor1Right] - 365
+  TriggerBottom = [Monitor1Bottom] - 30
+  TriggerLeft   = [Monitor1Left] + 365
+  
+[9]
+
+  TriggerTop    = [Monitor1Top] + 200
+  TriggerRight  = [Monitor1Left] + [Monitor1Width]  /2 + 195
+  TriggerBottom = [Monitor1Bottom] - 200
+  TriggerLeft   = [Monitor1Left] + 35
