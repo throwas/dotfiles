@@ -2,7 +2,7 @@ Custom window tiling template used with [Gridmove][1]. Recommended for panels/ta
 
 Usage: 
 Numlock must be on. 
-Hotkeys: Win + Numpad numbers 1-9. 
+Hotkeys: Win + Numpad numbers 1-9, or mouse dragging. 
 Numpad number placement implies the general window placement, with a few exceptions.
 Example: Win+Numpad 3 = Lower right corner of the screen. 
 
