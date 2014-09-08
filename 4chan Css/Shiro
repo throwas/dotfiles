@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif !important;
     color: #666 !important;
     margin: auto !important;
-    font-size: 14px !important;
+    font-size: 11px !important;
 }
 
 hr {
@@ -111,17 +111,19 @@ a {
 #index-sort,
 #index-size {
    color: #777!important;
-   border-color: #ebebeb !important;
+   border: none !important;
    font-family: "Open Sans" !important;
-   margin-left: 5px !important;
+   margin-left: 7px !important;
    background: #f8f8f8 !important;
+   box-shadow: none !important; 
 }
-
+    
 option { 
    color: #777!important;
-   border-color: #ebebeb !important;
+   border: 0px !important; 
    font-family: "Open Sans" !important;
    background: #f8f8f8 !important;
+   box-shadow: none !important; 
 }
 
 /* Appearance of the thread updater and thread stats. */
@@ -194,7 +196,7 @@ margin-top: 60px !important;
 
 .post.reply {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
     background: #f8f8f8 !important;
     color: #666 !important;
     width: 100% !important;
@@ -413,14 +415,14 @@ a.hide-reply-button > span {
 .postInfo a,
 div.postInfo {
     color: #6f6f6f !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
 }
 
 /* Relative to file info, i.e. filename, file size, resolution, etc. */
 
 div.fileText {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 0.750rem !important;
+    font-size: 0.780rem !important;
 }
 
 /* Fix post previews. */
