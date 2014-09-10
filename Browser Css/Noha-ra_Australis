@@ -9,11 +9,10 @@
 .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
 min-width: 10px !important;
 max-width: 200px !important;
-
 }
 
 #browser-border-start, #browser-border-end {
- display: none !important;
+ margin: -1px -1px -1px -1px !important;
  }
 
 /* removes ugly cloud thing */
@@ -33,7 +32,7 @@ max-width: 200px !important;
 
 #TabsToolbar .tabbrowser-tabs {
     min-height: 30px !important;
-    margin-top: -20px !important;
+    margin-top: -17px !important;
     margin-bottom: -2px !important;
     text-align: center !important;
     margin-left: -17px !important;
@@ -92,7 +91,7 @@ display: none !important;
     color: rgb(120,120,120) !important;
     margin-top: -1px !important;
     font-family: 'Open Sans' !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
     padding: 0px 0px !important;
 }
 
@@ -109,7 +108,7 @@ display: none !important;
 }
 
 #TabsToolbar .tabbrowser-tab[afterselected] {
-   border-right: 1px solid #777 !important;
+   border-right: 1px solid rgba(20,23,26,.04)!important;
 }
 
 #TabsToolbar .tabbrowser-tab[selected]:not([first-visible-tab]) {
@@ -205,13 +204,13 @@ menubar {
     border: 1px solid rgb(230,230,230) !important;
     text-align: center !important;;
     background: rgba(249,249,249,1) !important;
-    margin-top: 0px !important;
+    margin-top: -1px !important;
     margin-left: 5px !important;
     border-radius: 0px;
     padding: 0px !important;
     color: rgb(130,130,130) !important;
     height: 22px;
-    font-size: 13px !important;
+    font-size: 14px !important;
 }
 
 #nav-bar {
