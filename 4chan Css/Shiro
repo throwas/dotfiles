@@ -93,6 +93,15 @@ a {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 0.750rem !important;
 }
+    
+#menu.dialog,
+.entry:hover {
+    background: #e8e8e8 !important;
+    border: 0 !important;
+    color: #66998C  !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 0.750rem !important;
+}    
 
 /* Catalog search and page links */
 
@@ -234,6 +243,11 @@ div.reply {
     margin-bottom: 40px !important;
 }
 
+a.summary {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;  
+}    
+
 .replyContainer,
 #qp { 
     padding: 0px !important;
@@ -293,7 +307,13 @@ span.postNum a {
 
 /* Poster's name. */
 
-span.name {
+.useremail:hover .name:not(.capcode){
+    color: #66998C !important;
+    font-weight: normal !important;
+}
+    
+span.name,
+.useremail:not(:hover) .name:not(.capcode) {
     color: #996673  !important;
     font-weight: normal !important;
 }
@@ -326,6 +346,10 @@ span.page-num {
 a.replylink { 
     color: #667399 !important;
 }
+    
+a.replylink:not(:hover) { 
+    color: #667399 !important;
+}
 
 /* Link to posts quoting the current post. */
 
@@ -351,8 +375,16 @@ span.quote {
     float: right;
     position: relative;
     left: 0px;
+    opacity:0 !important;
 }
 
+.post:hover .menu-button {
+    float: right;
+    position: relative;
+    left: 0px;
+    opacity:1 !important;
+}    
+    
 .stub .menu-button,
 .postInfo .menu-button {
     opacity:0;
@@ -401,7 +433,7 @@ span.quote {
 .dialog.submenu,
 #menu {
     box-shadow: #afafaf 1px 2px 4px 2px !important;
-    }
+    } 
 
 /* Hide "hide reply" buttons. */
 
@@ -636,5 +668,44 @@ a.tab-main.tab-selected {
    display: none !important ;
 }
 
+/*** Animations ***/
+/* Change backlinks to >> and animate them. */
+a.backlink {
+text-decoration: none !important;
+font-size: 0 !important;;
 }
+.backlink:after {
+font-size: 11px !important;
+padding: 1px;
+content: '>>' !important;
+text-decoration: none !important;
+}
+.backlink:not(:first-child) {
+margin-left: -1.0rem;
+transition: all .1s linear .2s;
+opacity: 0;
+}
+/* Post menu animations. */
+.postContainer:hover .backlink {
+margin-left: 0rem;
+transition-delay: .1s;
+opacity: 100;
+}
+.post.reply a.menu-button {
+opacity: 0;
+transition: all .2s;
+}
+.post.reply:hover .menu-button {
+opacity: 100;
+transition: all .1s;
+}
+/* QR animations. */
+#qr.dialog.has-captcha.autohide,
+#qr.dialog.autohide {
+top: -300px !important;
+height: 21px !important;
+transition: all 0.7s ease 0s;
+}
+
+} 
 
