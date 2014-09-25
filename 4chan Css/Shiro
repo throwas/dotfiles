@@ -82,6 +82,13 @@ a {
     text-align: center !important;
     margin-left: -70px !important;
 }
+    
+/* Bottom Page list (use ALL THREADS) */
+
+.pagelist {
+    display: none!important;
+}
+    
 
 /* Appearance of the menus. */
 
@@ -108,7 +115,7 @@ a {
 #nav-links {
     background: #f8f8f8 !important;
     border-color: #ebebeb !important;
-    box-shadow: rgba(170,170,170,.9) 1px 2px 4px 2px !important; 
+    box-shadow: rgba(170,170,170,.9) 2px 2px 4px 4px !important; 
     right:0;
     padding:2px;
     position:fixed;
@@ -135,6 +142,11 @@ option {
    box-shadow: none !important; 
 }
 
+.catalog-mode .board  {
+    margin-top: 50px !important;
+}    
+   
+    
 /* Appearance of the thread updater and thread stats. */
 
 #index-search.field,
@@ -362,6 +374,7 @@ div.post div.postInfo span.postNum a:hover,
     color: #66998C !important;
 
 }
+
 
 /* Greentext. */
 
