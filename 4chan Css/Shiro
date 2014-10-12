@@ -20,6 +20,19 @@ a {
     color: #667399 !important;
 }
 
+/* Global Message*/
+
+h2 {
+    color: #667399!important;
+    margin-top: 35px !important;
+}    
+    
+.fa-minus-square-o:before {
+     content:""!important;
+     margin-top: 15px !important;
+}
+   
+    
 /* Foreground of the header bar */
 
 #board-list,
@@ -194,9 +207,14 @@ div.ad-plea {
 /* Display board banner? */
 
 div.boardBanner {
-margin-top: 60px !important;
+    margin-top: 60px !important;
 }
 
+#bannerCnt{
+    box-shadow: rgba(150,150,150,.4) 1px 2px 4px 2px !important; 
+    border: 1px #ccc !important;
+}    
+    
 .boardTitle{
     /*padding-top: 36px !important;
     font-family: 'Open Sans', sans-serif !important;
@@ -378,10 +396,10 @@ div.post div.postInfo span.postNum a:hover,
 
 /* Greentext. */
 
-span.quote {
+blockquote > span.quote  {
     color: #739966 !important;
 }
-
+ 
 /* Post menu button. */
 
 .post .menu-button {
@@ -469,6 +487,14 @@ div.fileText {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 0.780rem !important;
 }
+
+/* Post image */    
+    
+.fileThumb {
+    box-shadow: rgba(150,150,150,.4) 1px 2px 4px 2px !important; 
+    border: 1px #ccc !important;
+}    
+   
 
 /* Fix post previews. */
 
@@ -721,4 +747,3 @@ transition: all 0.7s ease 0s;
 }
 
 } 
-
