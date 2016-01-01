@@ -5,9 +5,9 @@ local                 usedLines = {"Name","Kernel","OS","Memory","Uptime",
                                    "Visual Style","Resolution","CPU","GPU","Disk Space",
                                    "bbLean Theme","Users","Now Playing","Terminal",
                                    "MoBo","Font","WM","Shell","Processes",
-                                   "Music Player","IRC Client"}
+                                   "Music Player","IRC Client","Scheme"}
 ]]
-                      usedLines = {"Name","OS","Uptime","WM","Visual Style","Font","Music Player","IRC Client","CPU","GPU","Memory","Processes"}
+                      usedLines = {"Name","OS","Shell","Uptime","WM","Visual Style","Font","Icons","Music Player","IRC Client","CPU","GPU","Memory","Processes"}
 local               fhost,fport = "localhost","3333"  --  Host and port for foobar
 local               mhost,mport = "localhost","6600"  --  Host and port for MPD
 local            dominantPlayer = "foobar"  --  Change to "mpd" to check for MPD first
@@ -82,27 +82,7 @@ local             lineFunctions = {}
           logos["windows8"][16] = "${c1}                 ''''::::::::::::"
           logos["windows8"][17] = "${c1}                         ''''::::"
     logos["windows8"]["colors"] = {"\027[1;34m"}
-	      logos["winbuntu"][01] = "${c2}                          .-+o+-       "
-		  logos["winbuntu"][02] = "${c1}                  yyyyy-${c2}-yyyyyy+     "
-		  logos["winbuntu"][03] = "${c1}               ${c1}://+//////${c2}-yyyyyyo     "
-		  logos["winbuntu"][04] = "${c3}           .++ ${c1}.:/++++++/-${c2}.+sss/\`     "
-		  logos["winbuntu"][05] = "${c3}         .:++o:  ${c1}/++++++++/:--:/-     "
-		  logos["winbuntu"][06] = "${c3}        o:+o+:++.${c1}\```\`\`\``-/oo+++++/    "
-		  logos["winbuntu"][07] = "${c3}       .:+o:+o/.${c1}          \`+sssoo+/   "
-		  logos["winbuntu"][08] = "${c1}  .++/+:${c3}+oo+o:\`${c1}             /sssooo.  "
-		  logos["winbuntu"][09] = "${c1} /+++//+:${c3}\oo+o${c1}                /::--:.  "
-		  logos["winbuntu"][10] = "${c1} \+/+o+++${c3}`o++o${c2}                ++////.  "
-		  logos["winbuntu"][11] = "${c1}  .++.o+${c3}++oo+:\ ${c2}             /dddhhh.  "
-		  logos["winbuntu"][12] = "${c3}       .+.o+oo:.${c2}          \ oddhhhh+   "
-		  logos["winbuntu"][13] = "${c3}        \+.++o+o\`\`-\.\.${c2} \.\..:ohdhhhhh+    "
-		  logos["winbuntu"][14] = "${c3}         \`:o+++ ${c2}\`ohhhhhhhhyo++os:     "
-		  logos["winbuntu"][15] = "${c3}           .o:${c2}\`.syhhhhhhh/${c3}.oo++o\`     "
-		  logos["winbuntu"][16] = "${c2}               /osyyyyyyo${c3}++ooo+++.    "
-		  logos["winbuntu"][17] = "${c2}                   \`\`\`\`\` ${c3}+oo+++o\:    "
-		  logos["winbuntu"][18] = "${c3}                          \`oo++.      "
-	logos["winbuntu"]["colors"] = {"\027[1;31m","\027[1;37m","\027[1;33m"}
-                  logos["none"] = {""}
-        logos["none"]["colors"] = {resetColor}
+
 local                     color
 local                 logoNames = {"windows7","windows8","none"}
 
@@ -761,10 +741,40 @@ lineFunctions["Music Player"] = function()
 end
 
 lineFunctions["Shell"] = function()
-    if not failedCygwinTest then
-        return os.getenv("SHELL") or "Not found"
+    local tasks = io.popen("tasklist") -- Get task list
+    local shell = ""
+    for line in tasks:lines() do
+        if line:find("blackbox.exe") then
+            shell = "Blackbox Zero 1.18"
+		end
+	end
+	if shell =="" then
+        if data256Color then
+            return "\027[38;5;240mNot found"
+        else
+            return "\027[1;30mNot found"
+        end
     else
-        return "CMD"
+        return shell
+    end
+end
+
+lineFunctions["Icons"] = function()
+    local tasks = io.popen("tasklist") -- Get task list
+    local icons = ""
+    for line in tasks:lines() do
+        if line:find("blackbox.exe") then
+            icons = "Numix by neiio"
+		end
+	end
+	if icons =="" then
+        if data256Color then
+            return "\027[38;5;240mNot found"
+        else
+            return "\027[1;30mNot found"
+        end
+    else
+        return icons
     end
 end
 

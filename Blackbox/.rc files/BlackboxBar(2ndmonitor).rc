@@ -1,0 +1,100 @@
+# ------------------------------------------------------
+# BlackboxBar+ 1.17 - configuration
+
+# Lines starting with # or ! are ignored
+
+# ---------------------
+# The items on the bar:
+# This builds a toolbar with tasks and tray. You can
+# change the order of items or uncomment some of the
+# currently disabled (!) items)
+
+BlackboxBar.item: CurrentOnlyButton
+!BlackboxBar.item: WindowLabel
+!BlackboxBar.item: WorkspaceButtonL
+!BlackboxBar.item: WorkspaceButtonR
+!BlackboxBar.item: WorkspaceLabel
+BlackboxBar.item: Tasks
+!BlackboxBar.item: Tray
+!BlackboxBar.item: WindowButtonL
+!BlackboxBar.item: WindowButtonR
+BlackboxBar.item: Clock
+
+!BlackboxBar.item: TaskStyleButton
+!BlackboxBar.item: NewLine
+!BlackboxBar.item: Space
+
+# ----------------
+# General Settings
+BlackboxBar.placement: User
+BlackboxBar.position.x: -1359
+BlackboxBar.position.y: -452
+BlackboxBar.widthPercent: 99
+BlackboxBar.useSlit: false
+BlackboxBar.pluginToggle: true
+BlackboxBar.OnTop: true
+BlackboxBar.AutoHide: false
+BlackboxBar.autoRaise: true
+BlackboxBar.snapToEdge: 20
+BlackboxBar.snapWindow: 4
+BlackboxBar.arrowBullets: false
+BlackboxBar.alpha.value: 7
+BlackboxBar.transparent: false
+
+# ---------
+# Task Tabs
+BlackboxBar.tasks.style: 0
+BlackboxBar.tasks.reverse: false
+BlackboxBar.tasks.current: true
+BlackboxBar.tasks.sysmenu: false
+BlackboxBar.tasks.drawBorder: false
+BlackboxBar.tasks.maxWidth: 100
+
+------------
+# Icons
+BlackboxBar.icon.saturation: 3
+BlackboxBar.icon.hue: 2
+BlackboxBar.icon.size: 16
+
+# ------------
+# Clock-Format
+BlackboxBar.strftimeFormat: %A, %B %d  %I:%M %p
+BlackboxBar.strftimeTipsFormat: %Y-%m-%d %a
+
+# ---------------
+# Special Options
+BlackboxBar.balloonTips: true
+BlackboxBar.autoFullscreenHide: true
+BlackboxBar.setDesktopMargin: true
+BlackboxBar.sendToSwitchTo: true
+
+# -------------------------
+# hidden icons (auto saved)
+BlackboxBar.tray.hidden.count: 17
+BlackboxBar.tray.hidden.1: "ytWindow",1972392
+BlackboxBar.tray.hidden.2: "msseces_class",1
+BlackboxBar.tray.hidden.3: "QWidget",0
+BlackboxBar.tray.hidden.4: "Logitech Wingman Internal Message Router",6010
+BlackboxBar.tray.hidden.5: "KodiakMainWndClass",0
+BlackboxBar.tray.hidden.6: "TPUtilWindow",32776960
+BlackboxBar.tray.hidden.7: "RainmeterTrayClass",101
+BlackboxBar.tray.hidden.8: "AutoIt v3",1
+BlackboxBar.tray.hidden.9: "AutoIt v3",1
+BlackboxBar.tray.hidden.10: "AutoHotkey",1028
+BlackboxBar.tray.hidden.11: "AutoHotkey",1028
+BlackboxBar.tray.hidden.12: "AutoHotkey",1028
+BlackboxBar.tray.hidden.13: "AutoHotkey",1028
+BlackboxBar.tray.hidden.14: "AutoHotkey",1028
+BlackboxBar.tray.hidden.15: "AutoHotkey",1028
+BlackboxBar.tray.hidden.16: "AutoHotkey",1028
+BlackboxBar.tray.hidden.17: "WorkerW",123
+BlackboxBar.minHeight: 6
+BlackboxBar.clock.tips: false
+BlackboxBar.clock.Btn1Click: 
+BlackboxBar.clock.Btn2Click: 
+BlackboxBar.clock.Btn3Click: 
+BlackboxBar.clock.Btn4Click: 
+BlackboxBar.clock.Btn5Click: 
+BlackboxBar.clock.Btn6Click: 
+BlackboxBar.alwaysOnTop: false
+

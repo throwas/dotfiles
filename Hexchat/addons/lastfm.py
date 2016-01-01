@@ -37,7 +37,7 @@ def print_nowplaying(track, echo=False):
 		return
 
 	if echo:
-		cmd = 'me is now playing 2{} by 4{} on 8{}.'.format(title, artist, album)
+		cmd = 'me now playing: 6♪ 2{} 14by 12{} 6♪'.format(title, artist)
 
 	hexchat.command(cmd)
 
