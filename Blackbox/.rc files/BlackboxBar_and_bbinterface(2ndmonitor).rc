@@ -27,7 +27,7 @@ BlackboxBar.item: Clock
 # ----------------
 # General Settings
 BlackboxBar.placement: User
-BlackboxBar.position.x: -1000
+BlackboxBar.position.x: -976
 BlackboxBar.position.y: -452
 BlackboxBar.widthPercent: 72
 BlackboxBar.useSlit: false
