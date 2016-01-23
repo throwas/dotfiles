@@ -15,8 +15,8 @@ session.screen0.toolbar.alpha.enabled: false
 session.screen0.toolbar.alpha.value: 224
 
 # - the menu -
-session.menu.position.x: 1031
-session.menu.position.y: 373
+session.menu.position.x: -964
+session.menu.position.y: -265
 session.menu.maxWidth: 300
 session.menu.popupDelay: 80
 session.menu.mouseWheelFactor: 3
