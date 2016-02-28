@@ -3,19 +3,6 @@
 !
 !
 !
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
 # ---------------------------------------------
 # bbZero 1.17.x - plugin.rc - the plugins to load
 
@@ -24,7 +11,7 @@
 # - manual editing.
 
 # - the BB hotkeys, see bbkeys.rc
-plugins\bbKeys\bbKeys.dll
+! plugins\bbKeys\bbKeys.dll
 
 # - Integrated toolbar with tasks and tray
 plugins\BlackboxBar\BlackboxBar.dll
@@ -36,7 +23,7 @@ plugins\BlackboxBar\BlackboxBar.dll
 plugins\bbSlit\bbSlit.dll
 
 # - bb interface plugin(s)
-plugins\bbInterface_iTunes\bbInterface_iTunes.dll
+& plugins\bbInterface_iTunes\bbInterface_iTunes.dll
 
 ! plugins\SystemBarEx\SystemBarEx.dll
 
@@ -45,7 +32,7 @@ plugins\bbInterface_iTunes\bbInterface_iTunes.dll
 
 # - Plugins in the slit
 ! & plugins\bbAnalog\bbAnalog.dll
-& plugins\bbIconBox\bbIconBox.dll
+plugins\bbIconBox\bbIconBox.dll
 ! & plugins\BBAnalogExMod\BBAnalogExMod.dll
 ! & plugins\bbFoomp\bbFoomp.dll
 plugins\bbColor3dc\bbColor3dc.dll
@@ -56,7 +43,7 @@ plugins\bbColor3dc\bbColor3dc.dll
 ! plugins\bbPager\bbPager.dll
 ! plugins\bbRecycleBin\bbRecycleBin.dll
 ! plugins\bbWorkspaceWheel\bbWorkspaceWheel.dll
-!plugins\BBRSS\BBRSS.dll
+! plugins\BBRSS\BBRSS.dll
 ! plugins\bbCalendar\bbCalendar.dll
 ! plugins\BBDigitalEx\BBDigitalEx.dll
 ! plugins\BBMagnify\BBMagnify.dll

@@ -100,4 +100,4 @@ session.screen0.slit.ontop: true
 session.screen0.slit.toggle: false
 
 # - current style -
-session.styleFile: styles\Chitoge
+session.styleFile: styles\Shiro

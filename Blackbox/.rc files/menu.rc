@@ -7,7 +7,7 @@
 [begin] (Menu)
 
 	[submenu] (Launch) <shell32.dll,25>
-		[exec] (Internet) {C:\Program Files (x86)\Nightly\firefox.exe} <"C:\Program Files (x86)\Nightly\firefox.exe">
+		[exec] (Internet) {C:\Program Files\Nightly\firefox.exe} <"C:\Program Files (x86)\Nightly\firefox.exe">
 		[exec] (Steam) {E:\Steam\steam.exe} <"E:\Steam\Steam.exe"> 
 		[exec] (IRC) {C:\Program Files\HexChat\hexchat.exe} <"C:\Program Files (x86)\HexChat\hexchat.exe">
 		[exec] (TeamSpeak) {C:\Program Files\TeamSpeak 3 Client\ts3client_win64.exe} <"C:\Program Files\TeamSpeak 3 Client\ts3client_win64.exe">

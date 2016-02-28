@@ -1,5 +1,5 @@
-urxvt.font: xft:DejaVu Sans Mono:Pixelsize=5
-urxvt.boldFont: xft:DejaVu Sans Mono:Pixelsize=5
+urxvt.font: xft:Inconsolata:Size=8
+urxvt.boldfont: xft:Inconsolata:Size=8
 urxvt.background: 	#EBEBEB
 urxvt.foreground: 	#909090
 urxvt.cursorColor:  #909090
@@ -21,6 +21,6 @@ urxvt.color7:       #909090
 urxvt.color15:      #b1b1b1
 urxvt.fading: 0
 urxvt.scrollBar: None
-urxvt.letterSpace: -1
+urxvt.letterSpace: 0
 urxvt.termName: rxvt-256color
 urxvt.internalBorder: 2
