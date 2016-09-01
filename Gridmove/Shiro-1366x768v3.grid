@@ -4,16 +4,16 @@
   
 [1] */half screen left/*
 
-  TriggerTop    = [Monitor2Top] + 32
+  TriggerTop    = [Monitor2Top] + 4
   TriggerRight  = [Monitor2Right] - 683
   TriggerBottom = [Monitor2Bottom] + 0
   TriggerLeft   = [Monitor2Left] + 0
   
 [2] */Bottom right/*
 
-  TriggerTop    = [Monitor2Top] + 384
+  TriggerTop    = [Monitor2Top] + 354
   TriggerRight  = [Monitor2Right] + 0
-  TriggerBottom = [Monitor2Bottom] + 0
+  TriggerBottom = [Monitor2Bottom] +0
   TriggerLeft   = [Monitor2Left] + 889
   
 [3] */Size Terminal - Mon 1/*
@@ -25,7 +25,7 @@
   
 [4] */75% Left/*
 
-  TriggerTop    = [Monitor2Top] + 32
+  TriggerTop    = [Monitor2Top] + 4
   TriggerRight  = [Monitor2Right] - 477
   TriggerBottom = [Monitor2Bottom] + 0
   TriggerLeft   = [Monitor2Left] + 0  
@@ -33,15 +33,15 @@
   
 [5] */Mon 2 middle half, under small portion/*
 
-  TriggerTop    = [Monitor2Top] + 116
+  TriggerTop    = [Monitor2Top] + 88
   TriggerRight  = [Monitor2Right] + 0
-  TriggerBottom = [Monitor2Bottom] - 384
+  TriggerBottom = [Monitor2Bottom] - 382
   TriggerLeft   = [Monitor2Left] + 889
   
   
 [6] */80% right small space on top/*
   
-  TriggerTop    = [Monitor2Top] + 116
+  TriggerTop    = [Monitor2Top] + 88
   TriggerRight  = [Monitor2Right] + 0
   TriggerBottom = [Monitor2Bottom] + 0
   TriggerLeft   = [Monitor2Left] + 889
@@ -55,22 +55,22 @@
   
 [8] */Top right/*
 
-  TriggerTop    = [Monitor2Top] + 32
+  TriggerTop    = [Monitor2Top] + 4
   TriggerRight  = [Monitor2Right] + 0
-  TriggerBottom = [Monitor2Bottom] - 384
+  TriggerBottom = [Monitor2Bottom] - 382
   TriggerLeft   = [Monitor2Left] + 889
 
 [9] */90% right large space on bottom/*
 
-  TriggerTop    = [Monitor2Top] + 32
+  TriggerTop    = [Monitor2Top] + 4
   TriggerRight  = [Monitor2Right] + 0
-  TriggerBottom = [Monitor2Bottom] - 652
+  TriggerBottom = [Monitor2Bottom] - 648
   TriggerLeft   = [Monitor2Left] + 889
   
 [10]  */Center - Monitor 1/*
 
-  TriggerTop    = [Monitor1Top] + 40
+  TriggerTop    = [Monitor1Top] + 25
   TriggerRight  = [Monitor1Right] - 40
-  TriggerBottom = [Monitor1Bottom] - 40
+  TriggerBottom = [Monitor1Bottom] - 25
   TriggerLeft   = [Monitor1Left] + 40
   
