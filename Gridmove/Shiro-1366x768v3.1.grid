@@ -1,0 +1,76 @@
+[Groups]
+  NumberOfGroups = 10
+  
+  
+[1] */half screen left/*
+
+  TriggerTop    = [Monitor2Top] + 32
+  TriggerRight  = [Monitor2Right] - 683
+  TriggerBottom = [Monitor2Bottom] + 0
+  TriggerLeft   = [Monitor2Left] + 0
+  
+[2] */Bottom right/*
+
+  TriggerTop    = [Monitor2Top] + 384
+  TriggerRight  = [Monitor2Right] + 0
+  TriggerBottom = [Monitor2Bottom] + 0
+  TriggerLeft   = [Monitor2Left] + 889
+  
+[3] */Size Terminal - Mon 1/*
+
+  TriggerTop    = [Monitor1Top] + 0
+  TriggerRight  = [Monitor1Right] + 0
+  TriggerBottom = [Monitor1Bottom] - 740
+  TriggerLeft   = [Monitor1Left] + 1365
+  
+[4] */75% Left/*
+
+  TriggerTop    = [Monitor2Top] + 32
+  TriggerRight  = [Monitor2Right] - 477
+  TriggerBottom = [Monitor2Bottom] + 0
+  TriggerLeft   = [Monitor2Left] + 0  
+  
+  
+[5] */Mon 2 middle half, under small portion/*
+
+  TriggerTop    = [Monitor2Top] + 116
+  TriggerRight  = [Monitor2Right] + 0
+  TriggerBottom = [Monitor2Bottom] - 384
+  TriggerLeft   = [Monitor2Left] + 889
+  
+  
+[6] */80% right small space on top/*
+  
+  TriggerTop    = [Monitor2Top] + 116
+  TriggerRight  = [Monitor2Right] + 0
+  TriggerBottom = [Monitor2Bottom] + 0
+  TriggerLeft   = [Monitor2Left] + 889
+
+[7] */Mon 1 half /*
+
+  TriggerTop    = [Monitor1Top] + 0
+  TriggerRight  = [Monitor1Left] + [Monitor1Width]  /2 + 200
+  TriggerBottom = [Monitor1Bottom] - 0
+  TriggerLeft   = [Monitor1Left] + 0
+  
+[8] */Top right/*
+
+  TriggerTop    = [Monitor2Top] + 32
+  TriggerRight  = [Monitor2Right] + 0
+  TriggerBottom = [Monitor2Bottom] - 384
+  TriggerLeft   = [Monitor2Left] + 889
+
+[9] */90% right large space on bottom/*
+
+  TriggerTop    = [Monitor2Top] + 32
+  TriggerRight  = [Monitor2Right] + 0
+  TriggerBottom = [Monitor2Bottom] - 652
+  TriggerLeft   = [Monitor2Left] + 889
+  
+[10]  */Center - Monitor 1/*
+
+  TriggerTop    = [Monitor1Top] + 40
+  TriggerRight  = [Monitor1Right] - 40
+  TriggerBottom = [Monitor1Bottom] - 40
+  TriggerLeft   = [Monitor1Left] + 40
+  
