@@ -6,7 +6,7 @@ Backups/originals/defaults of settings for everything bblean can be found at htt
 
 Popular styles from around the internet listed here in one convenient place:
 
-http://hora-hora.deviantart.com/art/BlackBox-combo-373191057)
+http://hora-hora.deviantart.com/art/BlackBox-combo-373191057
 http://indecisions.org/prm/blackbox/
 http://apathyrecharge.deviantart.com/art/bb-crim-318532742
 http://pitkon.deviantart.com/gallery/
