@@ -1,0 +1,123 @@
+# Omega - Deltascape V2.0 (Savage) - O2S
+# Edited from Shasta Kota of Death & Taxes (DnT) on Gilgamesh (O3S)
+
+
+#############################################################
+########CUSTOMIZE your timeline. Remove the hashtag from 
+########the beginning of the following lines to prevent 
+########them from appearing on your timeline.
+
+#hideall "--Reset--"
+
+##############################################################
+################## Windows 8 & 10 Voices ##################
+########REMOVE THE HASTAG to select a voice
+#define speaker "voice" "Microsoft Zira Desktop" 0 100
+#define speaker "voice" "Microsoft David Desktop" 0 100
+
+#################### Windows 7 Voices ####################
+########REMOVE THE HASTAG to select a voice
+define speaker "voice" "Microsoft Anna" 0 100
+
+################ CUSTOMIZE Call Outs #####################
+########REMOVE THE HASHTAG to enable each call out
+alertall "Earthquake" before 3 speak "voice" "Rise, Earthquake"
+#alertall "100Gs" before 3 speak "voice" "Remove Levitation"
+#alertall "Antilight" before 3 speak "voice" "Center"
+alertall "Gravity Wave" before 5 speak "voice" "Wave, Raid Damage"
+#alertall "Gravity Manipulation" before 3 speak "voice" "Rise, Stack Together"
+alertall "Paranormal Wave" before 3 speak "voice" "Avoid front, cone attack"
+alertall "Evilsphere" before 3 speak "voice" "Tank Buster"
+alertall "Maniacal Probe" before 3 speak "voice" "Tentacles"
+alertall "Deaths Gaze" before 3 speak "voice" "Look Away"
+alertall "Epicenter" before 5 speak "voice" "Find the safe spot"
+alertall "Minus 100Gs" before 3 speak "voice" "North and South are safe"
+alertall "Unstable - Tank and Healer" before 3 speak "voice" "Tanks and Healers Unstable" #401
+alertall "Long Drop - Tank and Healer" before 5 speak "voice" "Tanks and Healers, rise for push back"
+alertall "Unstable - DPS" before 5 speak "voice" "Dee Pee Ess Unstable" #556
+alertall "Long Drop - DPS" before 5 speak "voice" "Dee Pee Ess, rise for push back"
+
+##############################################################
+0	"--Reset--"	sync /Removing combatant Catastrophe/ window 1500 jump 0	
+
+########Phase 1
+0	"Engage!"
+13 	"Earthquake"
+26	"100Gs"
+31	"Antilight" sync /uses Antilight/ window 10
+48	"Gravity Wave" sync /uses Gravitational Wave/ window 10
+56	"Gravity Manipulation"
+105 "Gravitational Distortion"
+115 "Paranormal Wave" 
+120 "Paranormal Wave #2"
+125 "Evilsphere" sync /uses Evilsphere/ window 10
+137	"Paranormal Wave"
+142	"Maniacal Probe" sync /uses Maniacal Probe/ window 8
+153 "Deaths Gaze" sync /uses Death's Gaze/ window 5
+200 "Epicenter" 
+207	"Gravity Wave" sync /uses Gravitational Wave/ window 10
+218	"100Gs"
+223	"Gravity Wave" sync /uses Gravitational Wave/ window 10
+231	"Paranormal Wave"
+236 "Gravity Manipulation"
+257	"Paranormal Wave" sync /uses Paranormal Wave/ window 10
+301	"Evilsphere" sync /uses Evilsphere/ window 10
+314	"Paranormal Wave"
+321	"Minus 100Gs"
+350 "100Gs"
+354	"Antilight" sync /uses Antilight/ window 10
+401 "Unstable - Tank and Healer" sync /uses Unstable Gravity/ window 10
+402	"Gravity Wave"
+417 "Long Drop - Tank and Healer"
+
+########Phase 2
+428	"100Gs"
+432 "Antilight" sync /uses Antilight/ window 10
+447 "Earthquake"
+502 "100Gs"
+512 "Maniacal Probe" sync /uses Maniacal Probe/ window 10
+523 "Deaths Gaze"
+530	"Epicenter"
+537 "Gravity Manipulation"
+550 "Antilight" sync /uses Antilight/ window 10
+556	"Unstable - DPS"
+601	"100Gs"
+612 "Long Drop - DPS"
+622 "Paranormal Wave"
+628 "Paranormal Wave #2"
+632	"Evilsphere" sync /uses Evilsphere/ window 10
+645	"Paranormal Wave"
+651	"Antilight" sync /uses Antilight/ window 10
+702	"100Gs"
+707 "Maniacal Probe"
+719 "Deaths Gaze" sync /uses Death's Gaze/ window 10
+726 "Epicenter"
+733 "Gravity Manipulation"
+745 "Antilight" sync /uses Antilight/ window 10
+747 "Main Quake"
+752 "Unstable - Tank and Healer" sync /uses Unstable Gravity/ window 5
+757 "100Gs"
+808 "Long Drop - Tank and Healer"
+809 "Gravitational Distortion"
+
+########Phase 3
+810 "Deaths Gaze" sync /uses Death's Gaze/ window 10
+820 "Gravity Wave"
+826 "Paranormal Wave"
+830 "Antilight" sync /uses Antilight/ window 10
+841 "100Gs"
+846 "Paranormal Wave"
+852	"Evilsphere" sync /uses Evilsphere/ window 10
+905 "Paranormal Wave"
+909 "Gravity Manipulation"
+917 "Gravitational Distortion"
+925	"Antilight" sync /uses Antilight/ window 10
+935 "100Gs"
+940 "Earthquake" sync /uses Earthquake/ window 10
+950 "Gravity Wave"
+955 "Antilight" sync /uses Antilight/ window 10
+1005 "100Gs"
+1010 "Earthquake" sync /uses Earthquake/ window 10
+1011 "-ENRAGE SOON--"
+1017 "Gravity Wave" sync /uses Gravitational Wave/ window 5
+1030 "-Enrage | Wipe-"

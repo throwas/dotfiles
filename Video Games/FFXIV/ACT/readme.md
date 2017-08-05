@@ -1,0 +1,1 @@
+Any timeline information is written with consideration to healers.

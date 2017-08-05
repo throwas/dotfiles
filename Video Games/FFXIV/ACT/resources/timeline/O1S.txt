@@ -1,0 +1,99 @@
+# Omega - Deltascape V1.0 (Savage) - O1S
+# Edited from Shasta Kota of Death & Taxes (DnT) on Gilgamesh (O3S)
+
+
+#############################################################
+########CUSTOMIZE your timeline. Remove the hashtag from 
+########the beginning of the following lines to prevent 
+########them from appearing on your timeline.
+
+#hideall "--Reset--"
+
+##############################################################
+################## Windows 8 & 10 Voices ##################
+########REMOVE THE HASTAG to select a voice
+#define speaker "voice" "Microsoft Zira Desktop" 0 100
+#define speaker "voice" "Microsoft David Desktop" 0 100
+
+#################### Windows 7 Voices ####################
+########REMOVE THE HASTAG to select a voice
+define speaker "voice" "Microsoft Anna" 0 100
+
+################ CUSTOMIZE Call Outs #####################
+########REMOVE THE HASHTAG to enable each call out
+alertall "Charybdis" before 7 speak "voice" "Charybdis Soon"
+alertall "Tank Buster" before 3 speak "voice" "Tank Buster"
+alertall "Twin Bolt" before 3 speak "voice" "Twin Bolt"
+alertall "Clamp" before 3 speak "voice" "Clamp"
+alertall "Clamp and Breath Wing" before 5 speak "voice" "To Flank, Knock back"
+alertall "Stack together" before 3 speak "voice" "Stack Together"
+alertall "Inside is safe, ice push back" before 3 speak "voice" "Inside is safe, ice push back"
+alertall "Stay Inside, then move Outside" before 3 speak "voice" "Stay Inside, then move Outside"
+alertall "Stay Outside, then move Inside" before 3 speak "voice" "Stay Outside, then move Inside"
+alertall "Stay Inside, move between fire balls" before 3 speak "voice" "Stay Inside, move between fire balls"
+alertall "T pattern" before 3 speak "voice" "Tea pattern"
+
+
+##############################################################
+0	"--Reset--"	sync /Removing combatant Alte Roite/ window 1500 jump 0	
+
+########Phase 1
+0	"Engage!"
+3	"Mini Buster" #Wyrm Tail 	
+9	"Mini Buster" #Wyrm Tail	
+16	"Twin Bolt" sync /uses Twin Bolt/ window 10
+31	"Inside is safe, ice push back" #thin ice, push back then in back out. Classical Elements 1
+102	"Roar" sync /uses Roar/ window 20
+108	"Mini Buster" #Wyrm Tail	
+114	"Mini Buster" #Wyrm Tail	
+125	"Twin Bolt" 	
+131	"Clamp" sync /uses Clamp/ window 10
+144	"Mini Buster" #Wyrm Tail	
+152	"Stay Inside, then move Outside" #levin bolt, stand inside, then run out after outside explodes. Classical Elements 2
+203	"Blaze - Stack" 
+210	"Mini Buster" #Wyrm Tail	
+216	"Mini Buster" #Wyrm Tail	
+223	"Twin Bolt"	sync /uses Twin Bolt/ window 10
+233	"Roar"
+239	"Roar"
+245	"Mini Buster" #Wyrm Tail
+252	"Charybdis" sync /uses Charybdis/ window 10
+300	"Roar"	
+
+########Phase 2
+310	"T Pattern"
+345	"Clamp and Breath Wing"
+402	"Clamp"	sync /uses Clamp/ window 10
+410	"Blaze - Stack"
+417	"Roar"
+423	"Mini Buster" #Wyrm Tail
+429	"Mini Buster" #Wyrm Tail
+440	"Charybdis" sync /uses Charybdis/ window 5
+448	"Twin Bolt" sync /uses Twin Bolt/ window 2
+509	"Stay Outside, then move Inside" #levin bolt, stand outside then run in after inside explodes. Classical Elements 3
+528	"Roar"
+534	"Roar"
+
+########Phase 3
+544	"Stay Inside, move between fire balls" #Downburst ice pattern 2, Stand between two fireballs to dodge.
+614	"Blaze - Stack"
+621	"Roar"	sync /uses Roar/ window 10
+627	"Mini Buster" #Wyrm Tail
+633	"Mini Buster" #Wyrm Tail
+644	"Twin Bolt" sync /uses Twin Bolt/ window 10
+703	"Mini Buster" #Wyrm Tail
+709	"Stay Inside, then move Outside" #levin bolt, stand inside, then run out after outside explodes. Classical Elements 2
+722	"Blaze - stack"
+
+########Phase 4
+733	"Inside is safe, ice push back" #thin ice, push back then in back out
+804	"Roar"	sync /uses Roar/ window 10
+810	"Mini Buster" #Wyrm Tail
+816	"Mini Buster" #Wyrm Tail
+827	"Charybdis" sync /uses Charybdis/ window 10
+835	"Twin Bolt" 	
+840	"Stay Outside, then move Inside" #levin bolt, stand outside then run in after inside explodes. Classical Elements 3
+908	"Clamp"	sync /uses Clamp/ window 10
+914	"Roar"
+920	"Roar"
+925	"--Enrage Soon--"
