@@ -14,4 +14,4 @@ Prerequisite for Sound:
 2. SlimDX XAudio2 Implementation: http://advancedcombattracker.com/includes/page-download.php?id=59
 
 Optional:
-1. Slim DX Audio Plugin & Callbot Setup inscruction for Teamspeak: http://paradox-fc.guildwork.com/forum/threads/54a76b8f002aa8068153cfd6-who-needs-shot-callers 
+1. Slim DX Audio Plugin & Callbot Setup for Teamspeak: http://paradox-fc.guildwork.com/forum/threads/54a76b8f002aa8068153cfd6-who-needs-shot-callers 
