@@ -18,8 +18,8 @@
 
 !---- Frame1 ----
 @BBInterface Control Create Frame Frame1
-@BBInterface Control SetWindowProperty Frame1 X -1359
-@BBInterface Control SetWindowProperty Frame1 Y -489
+@BBInterface Control SetWindowProperty Frame1 X -1361
+@BBInterface Control SetWindowProperty Frame1 Y 5
 @BBInterface Control SetWindowProperty Frame1 Width 600
 @BBInterface Control SetWindowProperty Frame1 Height 20
 @BBInterface Control SetWindowProperty Frame1 Border true
@@ -42,7 +42,7 @@
 
 !---- Frame1::UpIcon ----
 @BBInterface Control CreateChild Frame1 Label UpIcon
-@BBInterface Control SetWindowProperty UpIcon X 266
+@BBInterface Control SetWindowProperty UpIcon X 262
 @BBInterface Control SetWindowProperty UpIcon Y 0
 @BBInterface Control SetWindowProperty UpIcon Width 20
 @BBInterface Control SetWindowProperty UpIcon Height 20
@@ -59,7 +59,7 @@
 !---- Frame1::UpSpeed ----
 @BBInterface Control CreateChild Frame1 Label UpSpeed
 @BBInterface Control SetWindowProperty UpSpeed X 286
-@BBInterface Control SetWindowProperty UpSpeed Y 1
+@BBInterface Control SetWindowProperty UpSpeed Y 0
 @BBInterface Control SetWindowProperty UpSpeed Width 70
 @BBInterface Control SetWindowProperty UpSpeed Height 20
 @BBInterface Control SetWindowProperty UpSpeed Border false
@@ -88,8 +88,8 @@
 
 !---- Frame1::DownSpeed ----
 @BBInterface Control CreateChild Frame1 Label DownSpeed
-@BBInterface Control SetWindowProperty DownSpeed X 190
-@BBInterface Control SetWindowProperty DownSpeed Y 0
+@BBInterface Control SetWindowProperty DownSpeed X 188
+@BBInterface Control SetWindowProperty DownSpeed Y -1
 @BBInterface Control SetWindowProperty DownSpeed Width 63
 @BBInterface Control SetWindowProperty DownSpeed Height 21
 @BBInterface Control SetWindowProperty DownSpeed Border false
@@ -119,8 +119,8 @@
 
 !---- Frame1::CPUData ----
 @BBInterface Control CreateChild Frame1 Label CPUData
-@BBInterface Control SetWindowProperty CPUData X 33
-@BBInterface Control SetWindowProperty CPUData Y 0
+@BBInterface Control SetWindowProperty CPUData X 32
+@BBInterface Control SetWindowProperty CPUData Y -1
 @BBInterface Control SetWindowProperty CPUData Width 32
 @BBInterface Control SetWindowProperty CPUData Height 21
 @BBInterface Control SetWindowProperty CPUData Border false
@@ -149,8 +149,8 @@
 
 !---- Frame1::RAMData ----
 @BBInterface Control CreateChild Frame1 Label RAMData
-@BBInterface Control SetWindowProperty RAMData X 109
-@BBInterface Control SetWindowProperty RAMData Y 0
+@BBInterface Control SetWindowProperty RAMData X 108
+@BBInterface Control SetWindowProperty RAMData Y -1
 @BBInterface Control SetWindowProperty RAMData Width 35
 @BBInterface Control SetWindowProperty RAMData Height 21
 @BBInterface Control SetWindowProperty RAMData Border false

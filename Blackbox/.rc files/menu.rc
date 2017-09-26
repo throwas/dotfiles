@@ -5,14 +5,13 @@
 # Available menu commands are listed in the documentation.
 
 [begin] (Menu)
-
 	[submenu] (Launch) <shell32.dll,25>
-		[exec] (Internet) {C:\Program Files\Nightly\firefox.exe} <"C:\Program Files (x86)\Nightly\firefox.exe">
+		[exec] (Internet) {C:\Nightly.lnk} <"C:\Program Files (x86)\Nightly\firefox.exe">
 		[exec] (Steam) {E:\Steam\steam.exe} <"E:\Steam\Steam.exe"> 
 		[exec] (IRC) {C:\Program Files\HexChat\hexchat.exe} <"C:\Program Files (x86)\HexChat\hexchat.exe">
-		[exec] (TeamSpeak) {C:\Program Files\TeamSpeak 3 Client\ts3client_win64.exe} <"C:\Program Files\TeamSpeak 3 Client\ts3client_win64.exe">
+		[exec] (TeamSpeak) {C:\Users\Erin\AppData\Local\TeamSpeak 3 Client\ts3client_win64.exe} <"C:\Program Files\TeamSpeak 3 Client\ts3client_win64.exe">
 		[exec] (Music) {C:\Program Files (x86)\foobar2000\foobar2000.exe} <"C:\Program Files (x86)\foobar2000\foobar2000.exe">
-		[exec] (Photoshop) {C:\Program Files (x86)\Adobe\Adobe Photoshop CS5\Photoshop.exe} <"C:\Program Files (x86)\Adobe\Adobe Photoshop CS5\Photoshop.exe">
+		[exec] (Photoshop) {C:\Program Files\Adobe\Adobe Photoshop CS5 (64 Bit)\Photoshop.exe} <"C:\Program Files\Adobe\Adobe Photoshop CS5 (64 Bit)\Photoshop.exe">
 		[exec] (Cygwin)	{C:\Cygwin32\bin\mintty.exe -i /Cygwin-Terminal.ico -} <"C:\Cygwin\Cygwin.ico">
 			[nop]
 			[submenu] (Misc) <shell32.dll,25>

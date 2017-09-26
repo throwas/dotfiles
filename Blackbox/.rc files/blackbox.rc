@@ -34,7 +34,7 @@ session.menu.icon.saturation: 80
 session.menu.icon.hue: 60
 session.menu.icon.size: 0
 session.menu.overlap: 0
-session.menu.spacing: 3
+session.menu.spacing: 5
 session.menu.separator.style: none
 session.menu.separator.fullWidth: false
 session.menu.separator.compact: false

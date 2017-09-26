@@ -1,2 +1,14 @@
-FFXIVconf.fea - Binds, UI backup file for Final Fantasy XIV
-ACT - Back ups of settings for various plugins, not intended for distribution. Please contact the author with questions and issues.
+FFXIVconf.fea - Personal binds & UI for Final Fantasy XIV
+ACT - Custom Triggers & Timers for FFXIV: Some timers may rely on a trigger. Some triggers may need "Your Character Name" replaced with your actual character name to work.
+
+*Plugins & Docs:
+Overlay Plugin: https://github.com/hibiyasleep/OverlayPlugin
+Overlay Skin: https://github.com/Ihellmasker/FFXIVParserSkin
+Timeline Plugin: https://github.com/anoyetta/act_timeline
+
+*Prerequisite for Sound:
+SlimDX libraries: http://slimdx.googlecode.com/files/SlimDX%20Runtime%20for%20.NET%204.0%20%28March%202011%29.exe
+SlimDX XAudio2 Implementation: http://advancedcombattracker.com/includes/page-download.php?id=59
+
+*Optional:
+Slim DX Audio Plugin & Callbot Setup inscruction for Teamspeak: http://paradox-fc.guildwork.com/forum/threads/54a76b8f002aa8068153cfd6-who-needs-shot-callers 

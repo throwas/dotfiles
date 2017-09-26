@@ -3,6 +3,17 @@
 !
 !
 !
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
 # ---------------------------------------------
 # bbZero 1.17.x - plugin.rc - the plugins to load
 
@@ -68,3 +79,4 @@ plugins\bbColor3dc\bbColor3dc.dll
 
 
 
+! & plugins\bbTcl\bbTcl.dll

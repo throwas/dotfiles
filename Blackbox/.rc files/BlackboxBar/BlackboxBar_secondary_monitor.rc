@@ -27,9 +27,9 @@ BlackboxBar.item: Clock
 # ----------------
 # General Settings
 BlackboxBar.placement: User
-BlackboxBar.position.x: -991
-BlackboxBar.position.y: -489
-BlackboxBar.widthPercent: 72
+BlackboxBar.position.x: -1002
+BlackboxBar.position.y: 5
+BlackboxBar.widthPercent: 73
 BlackboxBar.useSlit: false
 BlackboxBar.pluginToggle: true
 BlackboxBar.OnTop: true
@@ -96,4 +96,5 @@ BlackboxBar.clock.Btn3Click:
 BlackboxBar.clock.Btn4Click: 
 BlackboxBar.clock.Btn5Click: 
 BlackboxBar.clock.Btn6Click: 
-BlackboxBar.alwaysOnTop: true
+BlackboxBar.alwaysOnTop: false
+BlackboxBar.clickRaise: false
