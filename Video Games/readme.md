@@ -1,4 +1,4 @@
-FFXIVconf.fea - Binds, UI backup file for Final Fantasy XIV
+FFXIV = Final Fantasy XIV settings and such
 
 AddOns.7zip - World of Warcraft 3.3.5a addons (<WoW install directory>\Interface\AddOns)
 
