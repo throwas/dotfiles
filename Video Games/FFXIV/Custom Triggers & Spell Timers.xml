@@ -1,0 +1,136 @@
+﻿<CustomTriggers>
+	<AST>
+        <Trigger Active="True" Regex=":Your Character Name:1D18:Sleeve Draw:" SoundData="" SoundType="0" CategoryRestrict="False" Category="AST" Timer="True" TimerName="Sleeve Draw" Tabbed="False" />
+        <Trigger Active="True" Regex=":Your Character Name:E09:Redraw:" SoundData="" SoundType="0" CategoryRestrict="False" Category="AST" Timer="True" TimerName="Redraw" Tabbed="False" />
+        <Trigger Active="True" Regex=":Your Character Name:E1B:Time Dilation:" SoundData="" SoundType="0" CategoryRestrict="False" Category="AST" Timer="True" TimerName="Time Dilation" Tabbed="False" />
+        <Trigger Active="True" Regex=":Your Character Name:E1E:Essential Dignity:" SoundData="" SoundType="0" CategoryRestrict="False" Category="AST" Timer="True" TimerName="Essential Dignity" Tabbed="False" />
+        <Trigger Active="True" Regex=":Your Character Name:E20:Celestial Opposition:" SoundData="" SoundType="0" CategoryRestrict="False" Category="AST" Timer="True" TimerName="Celestial Opposition" Tabbed="False" />
+		
+	<Buffs>
+        <Trigger Active="True" Regex=":1CE4:Brotherhood:" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="2" CategoryRestrict="False" Category="Buffs" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex=":1D60:Embolden:" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="2" CategoryRestrict="False" Category="Buffs" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex=":76:Battle Voice:" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="2" CategoryRestrict="False" Category="Buffs" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex=":8D2:Trick Attack:" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="2" CategoryRestrict="False" Category="Buffs" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex=":DE5:Battle Litany:" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="2" CategoryRestrict="False" Category="Buffs" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="gains the effect of Chain Stratagem" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="2" CategoryRestrict="False" Category="Buffs" Timer="False" TimerName="" Tabbed="False" />
+		
+	<PLD>
+        <Trigger Active="True" Regex=":Your Character Name:14:Fight Or Flight:" SoundData="" SoundType="0" CategoryRestrict="False" Category="PLD" Timer="True" TimerName="Fight or Flight" Tabbed="False" />
+        <Trigger Active="True" Regex=":Your Character Name:1D6E:Awareness:Your Character Name:" SoundData="" SoundType="0" CategoryRestrict="False" Category="PLD" Timer="True" TimerName="Awareness" Tabbed="False" />
+        <Trigger Active="True" Regex=":Your Character Name:1D6F:Reprisal:" SoundData="" SoundType="0" CategoryRestrict="False" Category="PLD" Timer="True" TimerName="Reprisal" Tabbed="False" />
+        <Trigger Active="True" Regex="Your Character Name gains the effect of Divine Veil from Your Character Name" SoundData="" SoundType="0" CategoryRestrict="False" Category="PLD" Timer="True" TimerName="Divine Veil" Tabbed="False" />
+        <Trigger Active="True" Regex="Your Character Name gains the effect of Hallowed Ground from Your Character Name" SoundData="" SoundType="0" CategoryRestrict="False" Category="PLD" Timer="True" TimerName="Hallowed Ground" Tabbed="False" />
+        <Trigger Active="True" Regex="Your Character Name gains the effect of Passage Of Arms from Your Character Name" SoundData="" SoundType="0" CategoryRestrict="False" Category="PLD" Timer="True" TimerName="Passage Of Arms" Tabbed="False" />
+        <Trigger Active="True" Regex="Your Character Name gains the effect of Tempered Will from Your Character Name" SoundData="" SoundType="0" CategoryRestrict="False" Category="PLD" Timer="True" TimerName="Tempered Will" Tabbed="False" />
+		
+	<RDM>
+        <Trigger Active="True" Regex=":Your Character Name:1D5E:Acceleration:" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="0" CategoryRestrict="False" Category="RDM" Timer="False" TimerName="Acceleration" Tabbed="False" />
+        <Trigger Active="True" Regex=":Your Character Name:1D5F:Contre Sixte:" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Buff.wav" SoundType="0" CategoryRestrict="False" Category="RDM" Timer="False" TimerName="Contre Sixte" Tabbed="False" />
+		
+	<SCH>		
+        <Trigger Active="True" Regex=":Your Character Name:1D91:Eye For An Eye:" SoundData="" SoundType="0" CategoryRestrict="False" Category="SCH" Timer="True" TimerName="Eye for an Eye" Tabbed="False" />
+        <Trigger Active="True" Regex="16:106AE9EE:Your Character Name:DFF:Indomitability:" SoundData="Chain Stratagem" SoundType="0" CategoryRestrict="False" Category="SCH" Timer="True" TimerName="Indomitability" Tabbed="False" />
+		
+	<Shinryu-Extreme>	
+        <Trigger Active="True" Regex="gains the effect of Chain Stratagem from Your Character Name" SoundData="" SoundType="0" CategoryRestrict="False" Category="SCH" Timer="True" TimerName="Chain Strategem" Tabbed="False" />
+        <Trigger Active="True" Regex="Added new combatant The Worm's Heart" SoundData="Heart" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Akh Morn" SoundData="Ahque Mourn" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Benighting" SoundData="Be-nighting" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Death Sentence" SoundData="Death Sentence" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Earth Breath" SoundData="Earth Breath" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Hellfire" SoundData="Hellfire" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Hypernova" SoundData="Hypeer-nova" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Ice Storm" SoundData="Ice Storm" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Judgement Bolt" SoundData="Judgement Bolt" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Levinbolt" SoundData="Lev in Bolt" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Summon Icicle" SoundData="Icicle..." SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Tail Slap" SoundData="Tail" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Tera Slash" SoundData="Tera slash" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Wormwail" SoundData="Wail; move inside" SoundType="3" CategoryRestrict="False" Category="Shinryu Ex" Timer="False" TimerName="" Tabbed="False" />
+		
+	<V1S>
+        <Trigger Active="True" Regex="starts using Charybdis" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\AOE.wav" SoundType="2" CategoryRestrict="False" Category="V1S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Clamp" SoundData="Clamp!" SoundType="3" CategoryRestrict="False" Category="V1S" Timer="False" TimerName="" Tabbed="False" />
+		
+	<V2S>
+        <Trigger Active="True" Regex="starts using Death’s Gaze" SoundData="Look Away!" SoundType="3" CategoryRestrict="False" Category="V2S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Gravitational Wave" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\AOE.wav" SoundType="2" CategoryRestrict="False" Category="V2S" Timer="False" TimerName="" Tabbed="False" />
+		
+	<V3S>
+        <Trigger Active="True" Regex="14:2306:Halicarnassus" SoundData="Waltzz Directional" SoundType="3" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="14:2308:Halicarnassus" SoundData="Break Vines" SoundType="3" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="14:230A:Halicarnassus" SoundData="Blue Square" SoundType="3" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="14:230E:Halicarnassus" SoundData="Books" SoundType="3" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Dimensional Wave" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\AOE.wav" SoundType="2" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Oink" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Oink.wav" SoundType="2" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Ribbit" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\Ribbit.wav" SoundType="2" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="starts using Squelch" SoundData="Look Away!" SoundType="3" CategoryRestrict="False" Category="V3S" Timer="False" TimerName="" Tabbed="False" />
+	
+	<V4S>
+        <Trigger Active="True" Regex="Exdeath starts using Blizzard III" SoundData="Blizzard" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Exdeath starts using Fire III" SoundData="Fire" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Exdeath starts using Holy" SoundData="Stack together" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Exdeath starts using Thunder III" SoundData="Thunder" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Exdeath starts using Vacuum Wave" SoundData="Knock Back" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Exdeath starts using White Hole" SoundData="C:\Program Files (x86)\Advanced Combat Tracker\resources\wav\AOE.wav" SoundType="2" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Aero III" SoundData="Tank Buster" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Almagest" SoundData="Alma gest" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Delta Attack" SoundData="Bait, then spread out" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Double Attack" SoundData="Tank, stack middle" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Earth Shaker" SoundData="Earth Shaker" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Emptiness" SoundData="Floor move" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Flood of Naught" SoundData="Boss Lazers" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Grand Cross Alpha" SoundData="Middle" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Grand Cross Delta" SoundData="Debuff - Check" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Grand Cross Omega" SoundData="Omega - Cluster" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Light and Darkness" SoundData="Flare, and Stack" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Neo Exdeath starts using Meteor" SoundData="Meteors" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="You suffer the effect of (Beyond Death|Allagan Field|Cursed Shriek|Compressed Water|Forked Lightning)" SoundData="$1" SoundType="3" CategoryRestrict="False" Category="V4S" Timer="False" TimerName="" Tabbed="False" />
+    </CustomTriggers>
+	
+<SpellTimers>
+	<AST>
+        <Spell Checked="True" Name="Celestial Opposition" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Celestial Opposition" FillColor="-8149045" Panel1="True" Panel2="False" RemoveValue="0" Category="AST" RestrictCategory="False" />
+        <Spell Checked="True" Name="Essential Dignity" Timer="40" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Essential Dignity" FillColor="-8463700" Panel1="True" Panel2="False" RemoveValue="0" Category="AST" RestrictCategory="False" />
+        <Spell Checked="True" Name="Redraw" Timer="30" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="" WarningWav="" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Redraw" FillColor="-10568961" Panel1="True" Panel2="False" RemoveValue="0" Category="AST" RestrictCategory="False" />
+        <Spell Checked="True" Name="Sleeve Draw" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="" WarningWav="tts Sleeve drawr" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Sleeve Draw" FillColor="-4075681" Panel1="True" Panel2="False" RemoveValue="0" Category="AST" RestrictCategory="False" />
+        <Spell Checked="True" Name="Synastry" Timer="90" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Synastry" FillColor="-11355432" Panel1="True" Panel2="False" RemoveValue="0" Category="AST" RestrictCategory="False" />
+        <Spell Checked="True" Name="Time Dilation" Timer="90" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Time Dilation" FillColor="-7543062" Panel1="True" Panel2="False" RemoveValue="0" Category="AST" RestrictCategory="False" />
+		
+	<BLM>
+        <Spell Checked="True" Name="Convert" Timer="180" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Convert" FillColor="-10178049" Panel1="True" Panel2="False" RemoveValue="0" Category="BLM" RestrictCategory="False" />
+        <Spell Checked="True" Name="Ley Lines" Timer="90" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Ley Lines" FillColor="-8355585" Panel1="True" Panel2="False" RemoveValue="0" Category="BLM" RestrictCategory="False" />
+        <Spell Checked="True" Name="Manaward" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Manaward" FillColor="-32576" Panel1="True" Panel2="False" RemoveValue="0" Category="BLM" RestrictCategory="False" />
+        <Spell Checked="True" Name="Sharpcast" Timer="60" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Sharpcast" FillColor="-3845988" Panel1="True" Panel2="False" RemoveValue="0" Category="BLM" RestrictCategory="False" />
+        <Spell Checked="True" Name="Triplecast" Timer="60" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Triplecast" FillColor="-893213" Panel1="True" Panel2="False" RemoveValue="0" Category="BLM" RestrictCategory="False" />
+		
+	<PLD>
+        <Spell Checked="True" Name="Awareness" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Awareness" FillColor="-2247079" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Bulwark" Timer="180" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Bulwark" FillColor="-5901835" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Fight or Flight" Timer="60" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts Fight" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Fight or Flight" FillColor="-2993836" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Hallowed Ground" Timer="420" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts Hallowed Ground" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Hallowed Ground" FillColor="-2437834" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Passage Of Arms" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Passage of Arms" FillColor="-5277459" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Rampart" Timer="90" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Rampart" FillColor="-9682717" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Reprisal" Timer="60" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Reprisal" FillColor="-2467348" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Requiescat" Timer="60" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts requiesk" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Requiescat" FillColor="-4928267" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Sentinel" Timer="180" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Sentinel" FillColor="-11052039" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+        <Spell Checked="True" Name="Tempered Will" Timer="180" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts Will!" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Tempered Will" FillColor="-10781978" Panel1="True" Panel2="False" RemoveValue="0" Category="PLD" RestrictCategory="False" />
+		
+	<RDM>
+        <Spell Checked="True" Name="Acceleration" Timer="35" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Acceleration" FillColor="-4708569" Panel1="True" Panel2="False" RemoveValue="0" Category="RDM" RestrictCategory="False" />
+        <Spell Checked="True" Name="Contre Sixte" Timer="45" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Contre Sixte" FillColor="-11354908" Panel1="True" Panel2="False" RemoveValue="0" Category="RDM" RestrictCategory="False" />
+        <Spell Checked="True" Name="Manafication" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts Ma-na-fikay-shun" WarningValue="3" RadialDisplay="False" Modable="False" Tooltip="Manafication" FillColor="-12958297" Panel1="True" Panel2="False" RemoveValue="0" Category="RDM" RestrictCategory="False" />
+		
+	<Role Ability>
+        <Spell Checked="True" Name="Cleric Stance" Timer="90" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Cleric Stance" FillColor="-4710084" Panel1="True" Panel2="False" RemoveValue="0" Category="ROLE" RestrictCategory="False" />
+        <Spell Checked="True" Name="Eye for an Eye" Timer="180" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts Eye for an eye" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Eye for an Eye" FillColor="-1997223" Panel1="True" Panel2="False" RemoveValue="0" Category="ROLE" RestrictCategory="False" />
+        <Spell Checked="True" Name="Largesse" Timer="90" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Largesse" FillColor="-11294121" Panel1="False" Panel2="False" RemoveValue="0" Category="ROLE" RestrictCategory="False" />
+        <Spell Checked="True" Name="Lucid Dreaming" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts lou-sid-ity" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Lucid Dreaming" FillColor="-3111175" Panel1="True" Panel2="False" RemoveValue="0" Category="ROLE" RestrictCategory="False" />
+        <Spell Checked="True" Name="Swiftcast" Timer="60" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Swiftcast" FillColor="-6458641" Panel1="True" Panel2="False" RemoveValue="0" Category="ROLE" RestrictCategory="False" />
+		
+	<SCH>
+        <Spell Checked="True" Name="Chain Strategem" Timer="120" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts Chain stratt!!" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Chain Strategem" FillColor="-14733596" Panel1="True" Panel2="False" RemoveValue="0" Category="SCH" RestrictCategory="False" />
+        <Spell Checked="True" Name="Dissipation" Timer="180" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="tts Dissipation" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Dissipation" FillColor="-5319687" Panel1="True" Panel2="False" RemoveValue="0" Category="SCH" RestrictCategory="False" />
+        <Spell Checked="True" Name="Indomitability" Timer="30" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Indomitability" FillColor="-4726475" Panel1="True" Panel2="False" RemoveValue="0" Category="SCH" RestrictCategory="False" />
+        <Spell Checked="True" Name="Rouse" Timer="60" OnlyMasterTicks="True" Restrict="True" Absolute="False" StartWav="none" WarningWav="none" WarningValue="3" RadialDisplay="True" Modable="False" Tooltip="Rouse" FillColor="-8991522" Panel1="True" Panel2="False" RemoveValue="0" Category="SCH" RestrictCategory="False" />
+</SpellTimers>
